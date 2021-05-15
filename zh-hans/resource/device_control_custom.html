@@ -1,0 +1,1375 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>自定义设备控制 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sf-score/style/scorePlugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ota.html" />
+    
+    
+    <link rel="prev" href="verticalsdk/data.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../zh-hans/resource/images/bitbug_favicon.ico' type="image/x-icon">
+    
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    SDK 概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="professional_words.html">
+            
+                <a href="professional_words.html">
+            
+                    
+                    名词解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="register_iot_sdk.html">
+            
+                <a href="register_iot_sdk.html">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="register_iot_sdk.html">
+            
+                <a href="register_iot_sdk.html">
+            
+                    
+                    注册开发者账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="get_auth_info.html">
+            
+                <a href="get_auth_info.html">
+            
+                    
+                    获取授权码等信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="app_white_list.html">
+            
+                <a href="app_white_list.html">
+            
+                    
+                    应用开启白名单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="integrated_homesdk.html">
+            
+                <a href="integrated_homesdk.html">
+            
+                    
+                    集成 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="integrated_homesdk.html">
+            
+                <a href="integrated_homesdk.html">
+            
+                    
+                    集成基础 SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="integrated_gateway_sdk.html">
+            
+                <a href="integrated_gateway_sdk.html">
+            
+                    
+                    集成带网关能力的 SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="active_process.html">
+            
+                <a href="active_process.html">
+            
+                    
+                    授权激活网关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="qr_login.html">
+            
+                <a href="qr_login.html">
+            
+                    
+                    二维码授权登录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="account_info.html">
+            
+                <a href="account_info.html">
+            
+                    
+                    账号信息管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="active_gateway.html">
+            
+                <a href="active_gateway.html">
+            
+                    
+                    激活网关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="gateway_api.html">
+            
+                <a href="gateway_api.html">
+            
+                    
+                    GatewayListener 回调函数详细介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="gateway_functions.html">
+            
+                <a href="gateway_functions.html">
+            
+                    
+                    网关更多功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="home.html">
+            
+                <a href="home.html">
+            
+                    
+                    家庭管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="device_manager.html">
+            
+                <a href="device_manager.html">
+            
+                    
+                    设备管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="verticalsdk/device_vertical_catgory_control.html">
+            
+                <a href="verticalsdk/device_vertical_catgory_control.html">
+            
+                    
+                    垂直化品类控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="verticalsdk/integrated.html">
+            
+                <a href="verticalsdk/integrated.html">
+            
+                    
+                    集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="verticalsdk/standardcode_catgory.html">
+            
+                <a href="verticalsdk/standardcode_catgory.html">
+            
+                    
+                    标准品类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.2.1" data-path="verticalsdk/standardcode_catgory.html">
+            
+                <a href="verticalsdk/standardcode_catgory.html#title_catgory">
+            
+                    
+                    获取设备的标准品类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2.2" data-path="verticalsdk/standardcode_catgory.html">
+            
+                <a href="verticalsdk/standardcode_catgory.html#title_code">
+            
+                    
+                    获取指令集，状态集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="verticalsdk/device_public_ablity_method.html">
+            
+                <a href="verticalsdk/device_public_ablity_method.html">
+            
+                    
+                    设备共有能力方法说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="verticalsdk/device_kg.html">
+            
+                <a href="verticalsdk/device_kg.html">
+            
+                    
+                    开关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="verticalsdk/device_cz.html">
+            
+                <a href="verticalsdk/device_cz.html">
+            
+                    
+                    插座
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="verticalsdk/device_dj.html">
+            
+                <a href="verticalsdk/device_dj.html">
+            
+                    
+                    灯具类控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.7" data-path="verticalsdk/device_cl.html">
+            
+                <a href="verticalsdk/device_cl.html">
+            
+                    
+                    窗帘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.8" data-path="verticalsdk/device_kt.html">
+            
+                <a href="verticalsdk/device_kt.html">
+            
+                    
+                    空调
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.9" data-path="verticalsdk/device_lyj.html">
+            
+                <a href="verticalsdk/device_lyj.html">
+            
+                    
+                    晾衣架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.10" data-path="verticalsdk/device_wk.html">
+            
+                <a href="verticalsdk/device_wk.html">
+            
+                    
+                    温控器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.11" data-path="verticalsdk/device_xfj.html">
+            
+                <a href="verticalsdk/device_xfj.html">
+            
+                    
+                    新风机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.12" data-path="verticalsdk/device_sensor.html">
+            
+                <a href="verticalsdk/device_sensor.html">
+            
+                    
+                    传感
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.12.1" data-path="verticalsdk/device_sensor_dgnbj.html">
+            
+                <a href="verticalsdk/device_sensor_dgnbj.html">
+            
+                    
+                    多功能报警传感器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.12.2" data-path="verticalsdk/device_sensor_pir.html">
+            
+                <a href="verticalsdk/device_sensor_pir.html">
+            
+                    
+                    人体接近传感器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.12.3" data-path="verticalsdk/device_sensor_mcs.html">
+            
+                <a href="verticalsdk/device_sensor_mcs.html">
+            
+                    
+                    门磁传感器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.12.4" data-path="verticalsdk/device_sensor_sj.html">
+            
+                <a href="verticalsdk/device_sensor_sj.html">
+            
+                    
+                    水浸传感器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.12.5" data-path="verticalsdk/device_sensor_wsdc.html">
+            
+                <a href="verticalsdk/device_sensor_wsdc.html">
+            
+                    
+                    温湿度传感器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.12.6" data-path="verticalsdk/device_sensor_rqbj.html">
+            
+                <a href="verticalsdk/device_sensor_rqbj.html">
+            
+                    
+                    燃气报警传感器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.12.7" data-path="verticalsdk/device_sensor_sos.html">
+            
+                <a href="verticalsdk/device_sensor_sos.html">
+            
+                    
+                    sos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="verticalsdk/data.html">
+            
+                <a href="verticalsdk/data.html">
+            
+                    
+                    数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.3" data-path="device_control_custom.html">
+            
+                <a href="device_control_custom.html">
+            
+                    
+                    自定义设备控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="ota.html">
+            
+                <a href="ota.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="scene.html">
+            
+                <a href="scene.html">
+            
+                    
+                    智能场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ExtensionAbout.md">
+            
+                <span>
+            
+                    
+                    其他垂直品类 SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="Device_.shortcut_control.html">
+            
+                <a href="Device_.shortcut_control.html">
+            
+                    
+                    设备快捷控制 SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >自定义设备控制</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8BBE;&#x5907;&#x7BA1;&#x7406;"><b>1. </b>&#x8BBE;&#x5907;&#x7BA1;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8BBE;&#x5907;&#x521D;&#x59CB;&#x5316;"><b>1.1. </b>&#x8BBE;&#x5907;&#x521D;&#x59CB;&#x5316;</a></li><ul><li><span class="title-icon "></span><a href="#&#x521D;&#x59CB;&#x5316;&#x5BB6;&#x5EAD;&#x6570;&#x636E;"><b>1.1.1. </b>&#x521D;&#x59CB;&#x5316;&#x5BB6;&#x5EAD;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#&#x521D;&#x59CB;&#x5316;&#x8BBE;&#x5907;&#x63A7;&#x5236;"><b>1.1.2. </b>&#x521D;&#x59CB;&#x5316;&#x8BBE;&#x5907;&#x63A7;&#x5236;</a></li></ul><li><span class="title-icon "></span><a href="#&#x8BBE;&#x5907;&#x76D1;&#x542C;"><b>1.2. </b>&#x8BBE;&#x5907;&#x76D1;&#x542C;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6CE8;&#x518C;&#x8BBE;&#x5907;&#x76D1;&#x542C;"><b>1.2.1. </b>&#x6CE8;&#x518C;&#x8BBE;&#x5907;&#x76D1;&#x542C;</a></li><li><span class="title-icon "></span><a href="#&#x53D6;&#x6D88;&#x8BBE;&#x5907;&#x76D1;&#x542C;"><b>1.2.2. </b>&#x53D6;&#x6D88;&#x8BBE;&#x5907;&#x76D1;&#x542C;</a></li></ul><li><span class="title-icon "></span><a href="#&#x8BBE;&#x5907;&#x63A7;&#x5236;"><b>1.3. </b>&#x8BBE;&#x5907;&#x63A7;&#x5236;</a></li><li><span class="title-icon "></span><a href="#&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x70B9;&#x8BF4;&#x660E;"><b>1.4. </b>&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x70B9;&#x8BF4;&#x660E;</a></li><li><span class="title-icon "></span><a href="#&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;"><b>1.5. </b>&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;</a></li><li><span class="title-icon "></span><a href="#&#x6062;&#x590D;&#x51FA;&#x5382;&#x8BBE;&#x7F6E;"><b>1.6. </b>&#x6062;&#x590D;&#x51FA;&#x5382;&#x8BBE;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x56DE;&#x6536;&#x8BBE;&#x5907;&#x8D44;&#x6E90;"><b>1.7. </b>&#x56DE;&#x6536;&#x8BBE;&#x5907;&#x8D44;&#x6E90;</a></li><li><span class="title-icon "></span><a href="#devicebean-&#x6570;&#x636E;&#x6A21;&#x578B;"><b>1.8. </b>DeviceBean &#x6570;&#x636E;&#x6A21;&#x578B;</a></li></ul></ul></div><a href="#&#x8BBE;&#x5907;&#x7BA1;&#x7406;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8BBE;&#x5907;&#x7BA1;&#x7406;"><a name="&#x8BBE;&#x5907;&#x7BA1;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x5907;&#x7BA1;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8BBE;&#x5907;&#x7BA1;&#x7406;</h1>
+<p>&#x6D82;&#x9E26;&#x667A;&#x80FD;&#x63D0;&#x4F9B;&#x4E86;&#x4E30;&#x5BCC;&#x7684;&#x63A5;&#x53E3;&#x4F9B;&#x60A8;&#x5B9E;&#x73B0;&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x7684;&#x83B7;&#x53D6;&#x548C;&#x7BA1;&#x7406;&#x80FD;&#x529B;&#xFF08;&#x79FB;&#x9664;&#x7B49;&#xFF09;&#x3002;&#x8BBE;&#x5907;&#x76F8;&#x5173;&#x7684;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x90FD;&#x91C7;&#x7528;&#x5F02;&#x6B65;&#x6D88;&#x606F;&#x7684;&#x65B9;&#x5F0F;&#x901A;&#x77E5;&#x63A5;&#x6536;&#x8005;&#x3002;<code>ITuyaDevice</code> &#x7C7B;&#x63D0;&#x4F9B;&#x4E86;&#x8BBE;&#x5907;&#x72B6;&#x6001;&#x901A;&#x77E5;&#x80FD;&#x529B;&#xFF0C;&#x901A;&#x8FC7;&#x6CE8;&#x518C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x6570;&#x636E;&#x63A5;&#x53D7;&#x3001;&#x8BBE;&#x5907;&#x79FB;&#x9664;&#x3001;&#x8BBE;&#x5907;&#x4E0A;&#x4E0B;&#x7EBF;&#x3001;&#x624B;&#x673A;&#x7F51;&#x7EDC;&#x53D8;&#x5316;&#x7684;&#x901A;&#x77E5;&#x3002;&#x540C;&#x65F6;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x63A7;&#x5236;&#x6307;&#x4EE4;&#x4E0B;&#x53D1;&#xFF0C;&#x8BBE;&#x5907;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x7684;&#x63A5;&#x53E3;&#x3002;</p>
+<h2 id="&#x8BBE;&#x5907;&#x521D;&#x59CB;&#x5316;"><a name="&#x8BBE;&#x5907;&#x521D;&#x59CB;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x5907;&#x521D;&#x59CB;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x8BBE;&#x5907;&#x521D;&#x59CB;&#x5316;</h2>
+<h3 id="&#x521D;&#x59CB;&#x5316;&#x5BB6;&#x5EAD;&#x6570;&#x636E;"><a name="&#x521D;&#x59CB;&#x5316;&#x5BB6;&#x5EAD;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x521D;&#x59CB;&#x5316;&#x5BB6;&#x5EAD;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x521D;&#x59CB;&#x5316;&#x5BB6;&#x5EAD;&#x6570;&#x636E;</h3>
+<p>&#x8BBE;&#x5907;&#x63A7;&#x5236;&#x5FC5;&#x987B;&#x5148;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#xFF0C;&#x8C03;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5BB6;&#x5EAD;&#x4E0B;&#x7684;&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#xFF0C;&#x6BCF;&#x6B21; App &#x5B58;&#x6D3B;&#x671F;&#x95F4;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x6B21;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x6B64;&#x5916;&#x5207;&#x6362;&#x5BB6;&#x5EAD;&#x4E5F;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">newHomeInstance</span><span class="token punctuation">(</span>homeId<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getHomeDetail</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ITuyaHomeResultCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token class-name">HomeBean</span> homeBean<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMsg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x8BE5;&#x63A5;&#x53E3;&#x7684; onSuccess &#x65B9;&#x6CD5;&#x4E2D;&#x5C06;&#x8FD4;&#x56DE;<code>HomeBean</code>&#xFF0C;&#x7136;&#x540E;&#x8C03;&#x7528; <code>HomeBean</code> &#x7684; <code>getDeviceList</code> &#x5373;&#x53EF;&#x83B7;&#x5F97;&#x8BBE;&#x5907;&#x5217;&#x8868;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">DeviceBean</span><span class="token punctuation">&gt;</span></span> deviceList <span class="token operator">=</span> homeBean<span class="token punctuation">.</span><span class="token function">getDeviceList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x521D;&#x59CB;&#x5316;&#x8BBE;&#x5907;&#x63A7;&#x5236;"><a name="&#x521D;&#x59CB;&#x5316;&#x8BBE;&#x5907;&#x63A7;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x521D;&#x59CB;&#x5316;&#x8BBE;&#x5907;&#x63A7;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x521D;&#x59CB;&#x5316;&#x8BBE;&#x5907;&#x63A7;&#x5236;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x6839;&#x636E;&#x8BBE;&#x5907; id &#x521D;&#x59CB;&#x5316;&#x8BBE;&#x5907;&#x63A7;&#x5236;&#x7C7B;</p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">newDeviceInstance</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">devId</td>
+<td style="text-align:left">&#x8BBE;&#x5907; id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">ITuyaDevice</span> mDevice <span class="token operator">=</span> <span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">newDeviceInstance</span><span class="token punctuation">(</span>deviceBean<span class="token punctuation">.</span><span class="token function">getDevId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x8BBE;&#x5907;&#x76D1;&#x542C;"><a name="&#x8BBE;&#x5907;&#x76D1;&#x542C;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x5907;&#x76D1;&#x542C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x8BBE;&#x5907;&#x76D1;&#x542C;</h2>
+<h3 id="&#x6CE8;&#x518C;&#x8BBE;&#x5907;&#x76D1;&#x542C;"><a name="&#x6CE8;&#x518C;&#x8BBE;&#x5907;&#x76D1;&#x542C;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x518C;&#x8BBE;&#x5907;&#x76D1;&#x542C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. &#x6CE8;&#x518C;&#x8BBE;&#x5907;&#x76D1;&#x542C;</h3>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>ITuyaDevice &#x63D0;&#x4F9B;&#x8BBE;&#x5907;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF08;DP &#x6570;&#x636E;&#x3001;&#x8BBE;&#x5907;&#x540D;&#x79F0;&#x3001;&#x8BBE;&#x5907;&#x5728;&#x7EBF;&#x72B6;&#x6001;&#x548C;&#x8BBE;&#x5907;&#x79FB;&#x9664;&#xFF09;&#x7684;&#x76D1;&#x542C;&#xFF0C;&#x4F1A;&#x5B9E;&#x65F6;&#x540C;&#x6B65;&#x5230;&#x8FD9;&#x91CC;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">ITuyaDevice</span><span class="token punctuation">.</span><span class="token function">registerDevListener</span><span class="token punctuation">(</span><span class="token class-name">IDevListener</span> listener<span class="token punctuation">)</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">listener</td>
+<td style="text-align:left">&#x8BBE;&#x5907;&#x72B6;&#x6001;&#x76D1;&#x542C;</td>
+</tr>
+</tbody>
+</table>
+<p><code>IDevListener</code> &#x63A5;&#x53E3;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">IDevListener</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">/**
+     * DP &#x6570;&#x636E;&#x66F4;&#x65B0;
+     *
+     * @param devId &#x8BBE;&#x5907; ID
+     * @param dpStr &#x8BBE;&#x5907;&#x53D1;&#x751F;&#x53D8;&#x52A8;&#x7684;&#x529F;&#x80FD;&#x70B9;&#xFF0C;&#x4E3A; JSON &#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6570;&#x636E;&#x683C;&#x5F0F;&#xFF1A;{&quot;101&quot;: true}
+     */</span>
+    <span class="token keyword">void</span> <span class="token function">onDpUpdate</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">,</span> <span class="token class-name">String</span> dpStr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * &#x8BBE;&#x5907;&#x79FB;&#x9664;&#x56DE;&#x8C03;
+     *
+     * @param devId &#x8BBE;&#x5907;id
+     */</span>
+    <span class="token keyword">void</span> <span class="token function">onRemoved</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * &#x8BBE;&#x5907;&#x4E0A;&#x4E0B;&#x7EBF;&#x56DE;&#x8C03;&#x3002;&#x5982;&#x679C;&#x8BBE;&#x5907;&#x65AD;&#x7535;&#x6216;&#x65AD;&#x7F51;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x5C06;&#x4F1A;&#x5728;3&#x5206;&#x949F;&#x540E;&#x56DE;&#x8C03;&#x5230;&#x6B64;&#x65B9;&#x6CD5;&#x3002;
+     *
+     * @param devId  &#x8BBE;&#x5907; ID
+     * @param online &#x662F;&#x5426;&#x5728;&#x7EBF;&#xFF0C;&#x5728;&#x7EBF;&#x4E3A; true
+     */</span>
+    <span class="token keyword">void</span> <span class="token function">onStatusChanged</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">,</span> <span class="token keyword">boolean</span> online<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * &#x7F51;&#x7EDC;&#x72B6;&#x6001;&#x53D1;&#x751F;&#x53D8;&#x52A8;&#x65F6;&#x7684;&#x56DE;&#x8C03;
+     *
+     * @param devId  &#x8BBE;&#x5907; ID
+     *  @param status &#x7F51;&#x7EDC;&#x72B6;&#x6001;&#x662F;&#x5426;&#x53EF;&#x7528;&#xFF0C;&#x53EF;&#x7528;&#x4E3A; true
+     */</span>
+    <span class="token keyword">void</span> <span class="token function">onNetworkStatusChanged</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">,</span> <span class="token keyword">boolean</span> status<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * &#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x66F4;&#x65B0;&#x56DE;&#x8C03;
+     *
+     * @param devId  &#x8BBE;&#x5907; ID
+     */</span>
+    <span class="token keyword">void</span> <span class="token function">onDevInfoUpdate</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5176;&#x4E2D;&#xFF0C;&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x70B9;&#x8BF4;&#x660E;&#x89C1;&#x6587;&#x6863;&#x4E2D;&#x7684; <a href="https://developer.tuya.com/cn/docs/app-development/devicemanage?id=Ka6ki8r2rfiuu#DeviceFunction" target="_blank">&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x70B9;&#x8BF4;&#x660E;</a> &#x7AE0;&#x8282;&#x3002;</p>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<pre class="language-"><code class="lang-java">mDevice<span class="token punctuation">.</span><span class="token function">registerDevListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">IDevListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onDpUpdate</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">,</span> <span class="token class-name">String</span> dpStr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onRemoved</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onStatusChanged</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">,</span> <span class="token keyword">boolean</span> online<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onNetworkStatusChanged</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">,</span> <span class="token keyword">boolean</span> status<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onDevInfoUpdate</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x8BF7;&#x52FF;&#x4F7F;&#x7528;<code>void registerDeviceListener(IDeviceListener listener)</code>&#x65B9;&#x6CD5;&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x914D;&#x5408;&#x6807;&#x51C6;&#x8BBE;&#x5907;&#x4F7F;&#x7528;&#xFF0C;&#x8BE5; API &#x6682;&#x672A;&#x5BF9;&#x5916;&#x5F00;&#x653E;&#x3002;</p>
+</blockquote>
+<h3 id="&#x53D6;&#x6D88;&#x8BBE;&#x5907;&#x76D1;&#x542C;"><a name="&#x53D6;&#x6D88;&#x8BBE;&#x5907;&#x76D1;&#x542C;" class="anchor-navigation-ex-anchor" href="#&#x53D6;&#x6D88;&#x8BBE;&#x5907;&#x76D1;&#x542C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. &#x53D6;&#x6D88;&#x8BBE;&#x5907;&#x76D1;&#x542C;</h3>
+<p>&#x5F53;&#x4E0D;&#x9700;&#x8981;&#x76D1;&#x542C;&#x8BBE;&#x5907;&#x65F6;&#xFF0C;&#x6CE8;&#x9500;&#x8BBE;&#x5907;&#x76D1;&#x542C;&#x5668;&#x3002;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">ITuyaDevice</span><span class="token punctuation">.</span><span class="token function">unRegisterDevListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<pre class="language-"><code class="lang-java">mDevice<span class="token punctuation">.</span><span class="token function">unRegisterDevListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x8BBE;&#x5907;&#x63A7;&#x5236;"><a name="&#x8BBE;&#x5907;&#x63A7;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x5907;&#x63A7;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x8BBE;&#x5907;&#x63A7;&#x5236;</h2>
+<p>&#x8BBE;&#x5907;&#x63A7;&#x5236;&#x63A5;&#x53E3;&#x529F;&#x80FD;&#x4E3A;&#x5411;&#x8BBE;&#x5907;&#x53D1;&#x9001;&#x529F;&#x80FD;&#x70B9;&#xFF0C;&#x6765;&#x6539;&#x53D8;&#x8BBE;&#x5907;&#x72B6;&#x6001;&#x6216;&#x529F;&#x80FD;&#x3002;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x8BBE;&#x5907;&#x63A7;&#x5236;&#x7684;&#x81EA;&#x52A8;&#x65B9;&#x5F0F;&#xFF08;&#x5982;&#x679C;&#x5C40;&#x57DF;&#x7F51;&#x5728;&#x7EBF;&#xFF0C;&#x5148;&#x8D70;&#x5C40;&#x57DF;&#x7F51;&#x63A7;&#x5236;&#xFF0C;&#x5C40;&#x57DF;&#x7F51;&#x4E0D;&#x5728;&#x7EBF;&#xFF0C;&#x8D70;&#x4E91;&#x7AEF;&#x63A7;&#x5236;&#xFF09;</p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">ITuyaDevice</span><span class="token punctuation">.</span><span class="token function">publishDps</span><span class="token punctuation">(</span>dps<span class="token punctuation">,</span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">dps</td>
+<td style="text-align:left">data points, &#x8BBE;&#x5907;&#x529F;&#x80FD;&#x70B9;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A; json &#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td style="text-align:left">publishModeEnum</td>
+<td style="text-align:left">&#x8BBE;&#x5907;&#x63A7;&#x5236;&#x65B9;&#x5F0F;</td>
+</tr>
+<tr>
+<td style="text-align:left">callback</td>
+<td style="text-align:left">&#x53D1;&#x9001;&#x63A7;&#x5236;&#x6307;&#x4EE4;&#x662F;&#x5426;&#x6210;&#x529F;&#x7684;&#x56DE;&#x8C03;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<p>&#x5047;&#x8BBE;&#x5F00;&#x706F;&#x7684;&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x70B9;&#x662F; 101&#xFF0C;&#x90A3;&#x4E48;&#x5F00;&#x706F;&#x7684;&#x63A7;&#x5236;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java">mDevice<span class="token punctuation">.</span><span class="token function">publishDps</span><span class="token punctuation">(</span><span class="token string">&quot;{\&quot;101\&quot;: true}&quot;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">IResultCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> code<span class="token punctuation">,</span> <span class="token class-name">String</span> error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span>mContext<span class="token punctuation">,</span> <span class="token string">&quot;&#x5F00;&#x706F;&#x5931;&#x8D25;&quot;</span><span class="token punctuation">,</span> <span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span>mContext<span class="token punctuation">,</span> <span class="token string">&quot;&#x5F00;&#x706F;&#x6210;&#x529F;&quot;</span><span class="token punctuation">,</span> <span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;</strong></p>
+<ul>
+<li>&#x6307;&#x4EE4;&#x4E0B;&#x53D1;&#x6210;&#x529F;&#x5E76;&#x4E0D;&#x662F;&#x6307;&#x8BBE;&#x5907;&#x771F;&#x6B63;&#x64CD;&#x4F5C;&#x6210;&#x529F;&#xFF0C;&#x53EA;&#x662F;&#x610F;&#x5473;&#x7740;&#x6307;&#x4EE4;&#x6210;&#x529F;&#x53D1;&#x9001;&#x51FA;&#x53BB;&#x3002;&#x64CD;&#x4F5C;&#x6210;&#x529F;&#x4F1A;&#x6709; DP &#x6570;&#x636E;&#x4FE1;&#x606F;&#x4E0A;&#x62A5;&#x4E0A;&#x6765; &#xFF0C;&#x4E14;&#x901A;&#x8FC7; <code>IDevListener onDpUpdate</code> &#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x3002;</li>
+<li>command &#x547D;&#x4EE4;&#x5B57;&#x7B26;&#x4E32; &#x662F;&#x4EE5; <code>Map<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>String,Object</span><span class="token punctuation">&gt;</span></span></code>(dpId &#x548C; dpValue &#x952E;&#x503C;&#x5BF9;)&#x6570;&#x636E;&#x683C;&#x5F0F;&#x8F6C;&#x6210; json &#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li>command &#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x53D1;&#x9001;&#x591A;&#x4E2A; DP &#x6570;&#x636E;&#x3002;</li>
+</ul>
+</blockquote>
+<h2 id="&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x70B9;&#x8BF4;&#x660E;"><a name="&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x70B9;&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x70B9;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x8BBE;&#x5907;&#x529F;&#x80FD;&#x70B9;&#x8BF4;&#x660E;</h2>
+<p>DeviceBean &#x7C7B; dps &#x5C5E;&#x6027;&#x5B9A;&#x4E49;&#x4E86;&#x8BBE;&#x5907;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x79F0;&#x4F5C;&#x6570;&#x636E;&#x70B9;&#xFF08;DP&#xFF09;&#x6216;&#x529F;&#x80FD;&#x70B9;&#x3002;<code>dps</code> &#x5B57;&#x5178;&#x91CC;&#x7684;&#x6BCF;&#x4E2A; <code>key</code> &#x5BF9;&#x5E94;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x70B9;&#x7684; <code>dpId</code>&#xFF0C;<code>dpValue</code> &#x4E3A;&#x8BE5;&#x529F;&#x80FD;&#x70B9;&#x7684;&#x503C;&#x3002;&#x5404;&#x81EA;&#x4EA7;&#x54C1;&#x529F;&#x80FD;&#x70B9;&#x5B9A;&#x4E49;&#x53C2;&#x89C1; <a href="https://iot.tuya.com/index" target="_blank">&#x6D82;&#x9E26;&#x5F00;&#x53D1;&#x8005;&#x5E73;&#x53F0; </a>&#x7684;&#x4EA7;&#x54C1;&#x529F;&#x80FD;&#x3002;
+&#x529F;&#x80FD;&#x70B9;&#x5177;&#x4F53;&#x53C2;&#x89C1; <a href="https://developer.tuya.com/cn/docs/iot/configure-in-platform/function-definition/define-product-features?id=K97vug7wgxpoq" target="_blank">&#x529F;&#x80FD;&#x70B9;&#x76F8;&#x5173;&#x6982;&#x5FF5;</a></p>
+<p><strong>&#x6307;&#x4EE4;&#x683C;&#x5F0F;</strong></p>
+<p>&#x53D1;&#x9001;&#x63A7;&#x5236;&#x6307;&#x4EE4;&#x6309;&#x7167;&#x4EE5;&#x4E0B;&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java">    <span class="token punctuation">{</span><span class="token string">&quot;(dpId)&quot;</span><span class="token operator">:</span><span class="token string">&quot;(dpValue)&quot;</span><span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x529F;&#x80FD;&#x70B9;&#x793A;&#x4F8B;</strong></p>
+<p>&#x5F00;&#x53D1;&#x5E73;&#x53F0;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x4EA7;&#x54C1;&#x8FD9;&#x6837;&#x7684;&#x754C;&#x9762;&#xFF1A;</p>
+<p><img src="https://images.tuyacn.com/fe-static/docs/img/8a057fb2-5d8b-409b-bfb0-971a8c856a10.png" alt="&#x8BBE;&#x5907;&#x7BA1;&#x7406;"></p>
+<p>&#x6839;&#x636E;&#x540E;&#x53F0;&#x8BE5;&#x4EA7;&#x54C1;&#x7684;&#x529F;&#x80FD;&#x70B9;&#x5B9A;&#x4E49;&#xFF0C;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;:</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x8BBE;&#x7F6E; dpId &#x4E3A; 101 &#x7684;&#x5E03;&#x5C14;&#x578B;&#x529F;&#x80FD;&#x70B9;&#x793A;&#x4F8B;&#xFF0C;&#x4F5C;&#x7528;:&#x5F00;&#x5173;&#x6253;&#x5F00; </span>
+dps <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;101&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x8BBE;&#x7F6E; dpId &#x4E3A; 102 &#x7684;&#x5B57;&#x7B26;&#x4E32;&#x578B;&#x529F;&#x80FD;&#x70B9;&#x793A;&#x4F8B;&#xFF0C;&#x4F5C;&#x7528;:&#x8BBE;&#x7F6E; RGB &#x989C;&#x8272;&#x4E3A; ff5500</span>
+dps <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;102&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ff5500&quot;</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x8BBE;&#x7F6E;dpId&#x4E3A;103&#x7684;&#x679A;&#x4E3E;&#x578B;&#x529F;&#x80FD;&#x70B9;&#x793A;&#x4F8B;&#xFF0C;&#x4F5C;&#x7528;:&#x8BBE;&#x7F6E;&#x6863;&#x4F4D;&#x4E3A;2&#x6863;</span>
+dps <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;103&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2&quot;</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x8BBE;&#x7F6E; dpId &#x4E3A; 104 &#x7684;&#x6570;&#x503C;&#x578B;&#x529F;&#x80FD;&#x70B9;&#x793A;&#x4F8B;&#xFF0C;&#x4F5C;&#x7528;:&#x8BBE;&#x7F6E;&#x6E29;&#x5EA6;&#x4E3A; 20&#xB0;</span>
+dps <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;104&quot;</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x8BBE;&#x7F6E; dpId &#x4E3A; 105 &#x7684;&#x900F;&#x4F20;&#x578B;( byte &#x6570;&#x7EC4;)&#x529F;&#x80FD;&#x70B9;&#x793A;&#x4F8B;&#xFF0C;&#x4F5C;&#x7528;:&#x900F;&#x4F20;&#x7EA2;&#x5916;&#x6570;&#x636E;&#x4E3A; 1122</span>
+dps <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;105&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1122&quot;</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x591A;&#x4E2A;&#x529F;&#x80FD;&#x5408;&#x5E76;&#x53D1;&#x9001;</span>
+dps <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;101&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token string">&quot;102&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ff5500&quot;</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+mDevice<span class="token punctuation">.</span><span class="token function">publishDps</span><span class="token punctuation">(</span>dps<span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">IResultCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token annotation punctuation">@Override</span>
+        <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> code<span class="token punctuation">,</span> <span class="token class-name">String</span> error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//&#x9519;&#x8BEF;&#x7801;11001</span>
+        <span class="token comment">//&#x6709;&#x4E0B;&#x9762;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;</span>
+        <span class="token comment">//1&#x3001;&#x7C7B;&#x578B;&#x4E0D;&#x5BF9;&#x5BFC;&#x81F4;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;string &#x7C7B;&#x578B;&#x683C;&#x5F0F;&#xFF0C;&#x53D1;&#x6210; B&#x3000;oolean &#x7C7B;&#x578B;&#x6570;&#x636E;&#x3002;</span>
+        <span class="token comment">//2&#x3001;&#x53EA;&#x8BFB;&#x7C7B;&#x578B; DP &#x6570;&#x636E;&#x4E0D;&#x80FD;&#x4E0B;&#x53D1;&#xFF0C;&#x53C2;&#x8003; SchemaBean getMode &quot;ro&quot; &#x662F;&#x53EA;&#x8BFB;&#x7C7B;&#x578B;&#x3002;</span>
+        <span class="token comment">//3&#x3001;raw &#x683C;&#x5F0F;&#x53D1;&#x9001;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x4E0D;&#x662F; 16 &#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+        <span class="token punctuation">}</span>
+        <span class="token annotation punctuation">@Override</span>
+        <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;</strong></p>
+<ul>
+<li><p>&#x63A7;&#x5236;&#x547D;&#x4EE4;&#x7684;&#x53D1;&#x9001;&#x9700;&#x8981;&#x7279;&#x522B;&#x6CE8;&#x610F;&#x6570;&#x636E;&#x7C7B;&#x578B;.</p>
+<p>  &#x4F8B;&#x5982;&#xFF0C;&#x529F;&#x80FD;&#x70B9;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;&#x6570;&#x503C;&#x578B;&#xFF08; value &#xFF09;&#xFF0C;&#x90A3;&#x63A7;&#x5236;&#x547D;&#x4EE4;&#x53D1;&#x9001;&#x7684;&#x5E94;&#x8BE5;&#x662F; <code>{&quot;104&quot;: 25}</code> &#x800C;&#x4E0D;&#x662F; <code>{&quot;104&quot;: &quot;25&quot;}</code></p>
+</li>
+<li><p>&#x900F;&#x4F20;&#x7C7B;&#x578B;&#x4F20;&#x8F93;&#x7684; byte &#x6570;&#x7EC4;&#x662F; 16 &#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;&#x683C;&#x5F0F;&#x5E76;&#x4E14;&#x5FC5;&#x987B;&#x662F;&#x5076;&#x6570;&#x4F4D;
+  &#x6BD4;&#x5982;&#x6B63;&#x786E;&#x7684;&#x683C;&#x5F0F;&#x662F;: <code>{&quot;105&quot;: &quot;0110&quot;}</code> &#x800C;&#x4E0D;&#x662F; <code>{&quot;105&quot;: &quot;110&quot;}</code></p>
+</li>
+</ul>
+</blockquote>
+<h2 id="&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;"><a name="&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;</h2>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x67E5;&#x8BE2;&#x5355;&#x4E2A; DP &#x6570;&#x636E;&#x3002;</p>
+<p>&#x8BE5;&#x63A5;&#x53E3;&#x5E76;&#x975E;&#x540C;&#x6B65;&#x63A5;&#x53E3;&#xFF0C;&#x67E5;&#x8BE2;&#x540E;&#x7684;&#x6570;&#x636E;&#x4F1A;&#x901A;&#x8FC7; <code>IDevListener.onDpUpdate()</code> &#x63A5;&#x53E3;&#x56DE;&#x8C03;&#x3002;</p>
+<pre class="language-"><code class="lang-java">mDevice<span class="token punctuation">.</span><span class="token function">getDp</span><span class="token punctuation">(</span><span class="token class-name">String</span> dpId<span class="token punctuation">,</span> <span class="token class-name">IResultCallback</span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<pre class="language-"><code class="lang-java">mDevice<span class="token punctuation">.</span><span class="token function">getDp</span><span class="token punctuation">(</span>dpId<span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">IResultCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> code<span class="token punctuation">,</span> <span class="token class-name">String</span> error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;</strong></p>
+<p>&#x8BE5;&#x63A5;&#x53E3;&#x4E3B;&#x8981;&#x662F;&#x9488;&#x5BF9;&#x90A3;&#x4E9B;&#x6570;&#x636E;&#x4E0D;&#x4E3B;&#x52A8;&#x53BB;&#x4E0A;&#x62A5;&#x7684; DP&#xFF0C;&#x4F8B;&#x5982;&#x5012;&#x8BA1;&#x65F6;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;&#x3002; &#x5E38;&#x89C4;&#x67E5;&#x8BE2; DP &#x6570;&#x636E;&#x503C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; DeviceBean &#x91CC;&#x9762; getDps() &#x53BB;&#x83B7;&#x53D6;&#x3002;</p>
+</blockquote>
+<h2 id="&#x6062;&#x590D;&#x51FA;&#x5382;&#x8BBE;&#x7F6E;"><a name="&#x6062;&#x590D;&#x51FA;&#x5382;&#x8BBE;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x6062;&#x590D;&#x51FA;&#x5382;&#x8BBE;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x6062;&#x590D;&#x51FA;&#x5382;&#x8BBE;&#x7F6E;</h2>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x7528;&#x4E8E;&#x5C06;&#x8BBE;&#x5907;&#x91CD;&#x7F6E;&#xFF0C;&#x6062;&#x590D;&#x5230;&#x51FA;&#x5382;&#x72B6;&#x6001;&#xFF0C;&#x8BBE;&#x5907;&#x6062;&#x590D;&#x51FA;&#x5382;&#x8BBE;&#x7F6E;&#x540E;&#xFF0C;&#x4F1A;&#x91CD;&#x65B0;&#x8FDB;&#x5165;&#x5F85;&#x914D;&#x7F51;&#x72B6;&#x6001;&#xFF08;&#x5FEB;&#x8FDE;&#x6A21;&#x5F0F;&#xFF09;&#xFF0C;&#x8BBE;&#x5907;&#x7684;&#x76F8;&#x5173;&#x6570;&#x636E;&#x4F1A;&#x88AB;&#x6E05;&#x9664;&#x6389;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">void</span> <span class="token function">resetFactory</span><span class="token punctuation">(</span><span class="token class-name">IResultCallback</span> callback<span class="token punctuation">)</span>&#xFF1B;
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<pre class="language-"><code class="lang-java">mDevice<span class="token punctuation">.</span><span class="token function">resetFactory</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">IResultCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMsg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x56DE;&#x6536;&#x8BBE;&#x5907;&#x8D44;&#x6E90;"><a name="&#x56DE;&#x6536;&#x8BBE;&#x5907;&#x8D44;&#x6E90;" class="anchor-navigation-ex-anchor" href="#&#x56DE;&#x6536;&#x8BBE;&#x5907;&#x8D44;&#x6E90;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. &#x56DE;&#x6536;&#x8BBE;&#x5907;&#x8D44;&#x6E90;</h2>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x5E94;&#x7528;&#x6216;&#x8005; Activity &#x5173;&#x95ED;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x6B64;&#x63A5;&#x53E3;&#xFF0C;&#x56DE;&#x6536;&#x8BBE;&#x5907;&#x5360;&#x7528;&#x7684;&#x8D44;&#x6E90;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">void</span> <span class="token function">onDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<pre class="language-"><code class="lang-java">mDevice<span class="token punctuation">.</span><span class="token function">onDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="devicebean-&#x6570;&#x636E;&#x6A21;&#x578B;"><a name="devicebean-&#x6570;&#x636E;&#x6A21;&#x578B;" class="anchor-navigation-ex-anchor" href="#devicebean-&#x6570;&#x636E;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. DeviceBean &#x6570;&#x636E;&#x6A21;&#x578B;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5B57;&#x6BB5;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">devId</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x8BBE;&#x5907;&#x552F;&#x4E00;&#x6807;&#x793A; id</td>
+</tr>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x8BBE;&#x5907;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td style="text-align:left">iconUrl</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x56FE;&#x6807;&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td style="text-align:left">getIsOnline</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">&#x8BBE;&#x5907;&#x662F;&#x5426;&#x5728;&#x7EBF;&#xFF08;&#x5C40;&#x57DF;&#x7F51;&#x6216;&#x8005;&#x4E91;&#x7AEF;&#x5728;&#x7EBF;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">schema</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x8BBE;&#x5907;&#x63A7;&#x5236;&#x6570;&#x636E;&#x70B9;&#x7684;&#x7C7B;&#x578B;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td style="text-align:left">productId</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x4EA7;&#x54C1;ID&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x4EA7;&#x54C1; ID&#xFF0C;Schema &#x4FE1;&#x606F;&#x4E00;&#x81F4;</td>
+</tr>
+<tr>
+<td style="text-align:left">supportGroup</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">&#x8BBE;&#x5907;&#x662F;&#x5426;&#x652F;&#x6301;&#x7FA4;&#x7EC4;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x652F;&#x6301;&#x8BF7;&#x5230;&#x5F00;&#x653E;&#x5E73;&#x53F0;&#x5F00;&#x542F;&#x6B64;&#x9879;&#x529F;&#x80FD;</td>
+</tr>
+<tr>
+<td style="text-align:left">time</td>
+<td style="text-align:left">Long</td>
+<td style="text-align:left">&#x8BBE;&#x5907;&#x6FC0;&#x6D3B;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td style="text-align:left">pv</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x7F51;&#x5173;&#x534F;&#x8BAE;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td style="text-align:left">bv</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x7F51;&#x5173;&#x901A;&#x7528;&#x56FA;&#x4EF6;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td style="text-align:left">schemaMap</td>
+<td style="text-align:left">Map</td>
+<td style="text-align:left">Schema &#x7F13;&#x5B58;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td style="text-align:left">dps</td>
+<td style="text-align:left">Map</td>
+<td style="text-align:left">&#x8BBE;&#x5907;&#x5F53;&#x524D;&#x6570;&#x636E;&#x4FE1;&#x606F;&#x3002;key &#x662F; DP ID&#xFF0C;value &#x662F;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">isShare</td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">&#x662F;&#x5426;&#x662F;&#x5206;&#x4EAB;&#x8BBE;&#x5907;</td>
+</tr>
+<tr>
+<td style="text-align:left">virtual</td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">&#x662F;&#x5426;&#x662F;&#x865A;&#x62DF;&#x8BBE;&#x5907;</td>
+</tr>
+<tr>
+<td style="text-align:left">lon&#x3001;lat</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x7528;&#x6765;&#x6807;&#x793A;&#x7ECF;&#x7EAC;&#x5EA6;&#x4FE1;&#x606F;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x6237;&#x4F7F;&#x7528; sdk &#x524D;&#xFF0C;&#x8C03;&#x7528; TuyaSdk.setLatAndLong &#x8BBE;&#x7F6E;&#x7ECF;&#x7EAC;&#x5EA6;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td style="text-align:left">isLocalOnline</td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">&#x8BBE;&#x5907;&#x5C40;&#x57DF;&#x7F51;&#x5728;&#x7EBF;&#x72B6;&#x6001;</td>
+</tr>
+<tr>
+<td style="text-align:left">nodeId</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x7528;&#x4E8E;&#x7F51;&#x5173;&#x548C;&#x5B50;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x5C5E;&#x4E8E;&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x6807;&#x8BC6;&#x5176;&#x77ED;&#x5730;&#x5740; ID&#xFF0C;&#x4E00;&#x4E2A;&#x7F51;&#x5173;&#x4E0B;&#x9762;&#x7684; nodeId &#x90FD;&#x552F;&#x4E00;&#x7684;</td>
+</tr>
+<tr>
+<td style="text-align:left">timezoneId</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x8BBE;&#x5907;&#x65F6;&#x533A;</td>
+</tr>
+<tr>
+<td style="text-align:left">category</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x8BBE;&#x5907;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td style="text-align:left">meshId</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x7528;&#x4E8E;&#x7F51;&#x5173;&#x548C;&#x5B50;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x5C5E;&#x4E8E;&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x6807;&#x8BC6;&#x5176;&#x7F51;&#x5173; ID</td>
+</tr>
+<tr>
+<td style="text-align:left">isZigBeeWifi</td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">&#x662F;&#x5426;&#x662F; ZigBee &#x7F51;&#x5173;&#x8BBE;&#x5907;</td>
+</tr>
+<tr>
+<td style="text-align:left">hasZigBee</td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">hasZigBee</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="verticalsdk/data.html" class="navigation navigation-prev " aria-label="Previous page: 数据管理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ota.html" class="navigation navigation-next " aria-label="Next page: 固件升级">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"自定义设备控制","level":"1.6.3","depth":2,"next":{"title":"固件升级","level":"1.6.4","depth":2,"path":"resource/ota.md","ref":"./resource/ota.md","articles":[]},"previous":{"title":"数据管理","level":"1.6.2","depth":2,"path":"resource/verticalsdk/data.md","ref":"./resource/verticalsdk/data.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","anchor-navigation-ex","flexible-alerts","expandable-chapters-small","favicon","pageview-count","hide-element","sf-score","mermaid-gb3"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"github":{"url":"https://github.com/TuyaInc/tuyasmart_android_device_central_sdk"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"zh-hans/resource/images/bitbug_favicon.ico"},"pageview-count":{},"sf-score":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":{"zh-hans":"注意","en":"Attention"}},"note":{"className":"info","icon":"fa fa-info-circle","label":{"zh-hans":"提示","en":"Note"}},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":{"zh-hans":"Tips","en":"Tip"}},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":{"zh-hans":"警告","en":"Warning"}}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/device_control_custom.md","mtime":"2021-05-14T08:53:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-15T11:38:37.878Z"},"basePath":"..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sf-score/lib/scorePlugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

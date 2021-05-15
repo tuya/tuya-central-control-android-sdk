@@ -1,0 +1,45 @@
+.sf-pingfen{
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+}
+.sf-content{
+    width: 100%;
+    height: 72px;
+}
+.sf-stars{
+    list-style: none;
+    margin: 0;
+    line-height: 67px;
+    color: #ccc;
+    float: left;
+}
+.sf-stars span{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.sf-stars span:after{
+    content: '☆';
+}
+.sf-stars .sf-show:after,.sf-stars .sf-show2:after{
+    content: '★';
+}
+.sf-info{
+    float: left;
+    width: 60px;
+    height: 30px;
+    background: #e15671;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 21px;
+    text-align: center;
+    line-height: 30px;
+    display: none;
+}
+.sf-show {
+    color: #e4c6e4;
+}
+.sf-show2{
+    color: #e15671;
+}

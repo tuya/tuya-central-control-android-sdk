@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>集成带网关能力的 SDK · GitBook</title>
+        <title>集成扩展网关能力的 SDK · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -255,7 +255,7 @@
                 <a href="integrated_gateway_sdk.html">
             
                     
-                    集成带网关能力的 SDK
+                    集成扩展网关能力的 SDK
             
                 </a>
             
@@ -314,12 +314,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="active_gateway.html">
+        <li class="chapter " data-level="1.4.2" data-path="extension_sdk.html">
             
-                <a href="active_gateway.html">
+                <a href="extension_sdk.html#网关扩展-sdk">
             
                     
-                    激活网关
+                    激活扩展网关 SDK
             
                 </a>
             
@@ -328,12 +328,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.2.1" data-path="gateway_api.html">
+        <li class="chapter " data-level="1.4.2.1" data-path="extension_sdk.html">
             
-                <a href="gateway_api.html">
+                <a href="extension_sdk.html#获取网关sdk实例">
             
                     
-                    GatewayListener 回调函数详细介绍
+                    获取网关sdk实例
             
                 </a>
             
@@ -341,16 +341,113 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2.2" data-path="gateway_functions.html">
+        <li class="chapter " data-level="1.4.2.2" data-path="extension_sdk.html">
             
-                <a href="gateway_functions.html">
+                <a href="extension_sdk.html#注册回调函数">
             
                     
-                    网关更多功能
+                    注册回调函数
             
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="extension_sdk.html">
+            
+                <a href="extension_sdk.html#网关参数配置">
+            
+                    
+                    网关参数配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="extension_sdk.html">
+            
+                <a href="extension_sdk.html#启动网关">
+            
+                    
+                    启动网关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="extension_sdk.html">
+            
+                <a href="extension_sdk.html#使用-token-激活网关">
+            
+                    
+                    使用 token 激活网关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="extension_sdk.html">
+            
+                <a href="extension_sdk.html#配置说明">
+            
+                    
+                    更多说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.6.1" data-path="extension_sdk.html">
+            
+                <a href="extension_sdk.html#配置说明">
+            
+                    
+                    配置说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2" data-path="extension_sdk.html">
+            
+                <a href="extension_sdk.html#函数说明">
+            
+                    
+                    函数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.3" data-path="extension_sdk.html">
+            
+                <a href="extension_sdk.html#辅助类说明">
+            
+                    
+                    辅助类说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -752,14 +849,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="ExtensionAbout.md">
+        <li class="chapter " data-level="1.8" >
             
                 <span>
             
                     
                     其他垂直品类 SDK
             
-                </a>
+                </span>
             
 
             
@@ -814,7 +911,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >集成带网关能力的 SDK</a>
+        <a href=".." >集成扩展网关能力的 SDK</a>
     </h1>
 </div>
 
@@ -829,24 +926,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#&#x63A5;&#x5165;&#x5E26;&#x7F51;&#x5173;&#x80FD;&#x529B;-sdk"><b>1.1.1. </b>&#x63A5;&#x5165;&#x5E26;&#x7F51;&#x5173;&#x80FD;&#x529B; SDK</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h3 id="&#x63A5;&#x5165;&#x5E26;&#x7F51;&#x5173;&#x80FD;&#x529B;-sdk"><a name="&#x63A5;&#x5165;&#x5E26;&#x7F51;&#x5173;&#x80FD;&#x529B;-sdk" class="anchor-navigation-ex-anchor" href="#&#x63A5;&#x5165;&#x5E26;&#x7F51;&#x5173;&#x80FD;&#x529B;-sdk"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x63A5;&#x5165;&#x5E26;&#x7F51;&#x5173;&#x80FD;&#x529B; SDK</h3>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#&#x63A5;&#x5165;&#x6269;&#x5C55;&#x7F51;&#x5173;&#x80FD;&#x529B;-sdk"><b>1.1.1. </b>&#x63A5;&#x5165;&#x6269;&#x5C55;&#x7F51;&#x5173;&#x80FD;&#x529B; SDK</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h3 id="&#x63A5;&#x5165;&#x6269;&#x5C55;&#x7F51;&#x5173;&#x80FD;&#x529B;-sdk"><a name="&#x63A5;&#x5165;&#x6269;&#x5C55;&#x7F51;&#x5173;&#x80FD;&#x529B;-sdk" class="anchor-navigation-ex-anchor" href="#&#x63A5;&#x5165;&#x6269;&#x5C55;&#x7F51;&#x5173;&#x80FD;&#x529B;-sdk"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x63A5;&#x5165;&#x6269;&#x5C55;&#x7F51;&#x5173;&#x80FD;&#x529B; SDK</h3>
 <p>&#x65B0;&#x589E;&#x4F9D;&#x8D56;</p>
-<pre class="language-"><code class="lang-groovy">implementation <span class="token string">&apos;com.tuya.smart:tuyasmart-iot_sdk:1.0.8.6&apos;</span>
-implementation <span class="token string">&apos;com.tencent.mars:mars-xlog:1.2.3&apos;</span>
+<pre class="language-"><code class="lang-groovy">implementation <span class="token string">&apos;com.tuya.smart:tuyasmart-gw_extension_sdk:1.0.6&apos;</span>
+implementation <span class="token string">&apos;pub.devrel:easypermissions:2.0.1&apos;</span>
 </code></pre>
-<blockquote>
-<p>&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;build.gradle&#x4E2D;&#x6DFB;&#x52A0;&#x4ED3;&#x5E93;&#x5730;&#x5740;</p>
-</blockquote>
-<pre class="language-"><code>maven { url &apos;https://dl.bintray.com/tuyasmartai/sdk&apos; }
-</code></pre><p>&#x65B0;&#x589E;&#x6DF7;&#x6DC6;
-&#x5982;&#x679C;&#x5F00;&#x542F;&#x4E86;&#x6DF7;&#x6DC6;&#xFF0C;&#x5728;proguard-rules.pro&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;</p>
-<pre class="language-"><code>-keep class com.tuya.smartai.iot_sdk.** {*;}
--keep class com.tencent.mars.** {*;}
-</code></pre><p>&#x65B0;&#x589E;&#x6743;&#x9650;&#x8981;&#x6C42;</p>
-<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>uses-permission</span> <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>android.permission.INTERNET<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>uses-permission</span> <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>android.permission.WRITE_EXTERNAL_STORAGE<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>uses-permission</span> <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>android.permission.READ_EXTERNAL_STORAGE<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
-</code></pre>
+
                                 
                                 </section>
                             
@@ -889,7 +974,7 @@ implementation <span class="token string">&apos;com.tencent.mars:mars-xlog:1.2.3
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"集成带网关能力的 SDK","level":"1.3.2","depth":2,"next":{"title":"授权激活网关","level":"1.4","depth":1,"path":"resource/active_process.md","ref":"./resource/active_process.md","articles":[{"title":"二维码授权登录","level":"1.4.1","depth":2,"path":"resource/qr_login.md","ref":"./resource/qr_login.md","articles":[{"title":"账号信息管理","level":"1.4.1.1","depth":3,"path":"resource/account_info.md","ref":"./resource/account_info.md","articles":[]}]},{"title":"激活网关","level":"1.4.2","depth":2,"path":"resource/active_gateway.md","ref":"./resource/active_gateway.md","articles":[{"title":"GatewayListener 回调函数详细介绍","level":"1.4.2.1","depth":3,"path":"resource/gateway_api.md","ref":"./resource/gateway_api.md","articles":[]},{"title":"网关更多功能","level":"1.4.2.2","depth":3,"path":"resource/gateway_functions.md","ref":"./resource/gateway_functions.md","articles":[]}]}]},"previous":{"title":"集成基础 SDK","level":"1.3.1","depth":2,"path":"resource/integrated_homesdk.md","ref":"./resource/integrated_homesdk.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","anchor-navigation-ex","flexible-alerts","expandable-chapters-small","favicon","pageview-count","hide-element","sf-score","mermaid-gb3"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"github":{"url":"https://github.com/TuyaInc/tuyasmart_android_device_central_sdk"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"zh-hans/resource/images/bitbug_favicon.ico"},"pageview-count":{},"sf-score":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":{"zh-hans":"注意","en":"Attention"}},"note":{"className":"info","icon":"fa fa-info-circle","label":{"zh-hans":"提示","en":"Note"}},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":{"zh-hans":"Tips","en":"Tip"}},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":{"zh-hans":"警告","en":"Warning"}}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/integrated_gateway_sdk.md","mtime":"2021-04-27T07:49:05.610Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-15T11:38:37.878Z"},"basePath":"..","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"集成扩展网关能力的 SDK","level":"1.3.2","depth":2,"next":{"title":"授权激活网关","level":"1.4","depth":1,"path":"resource/active_process.md","ref":"./resource/active_process.md","articles":[{"title":"二维码授权登录","level":"1.4.1","depth":2,"path":"resource/qr_login.md","ref":"./resource/qr_login.md","articles":[{"title":"账号信息管理","level":"1.4.1.1","depth":3,"path":"resource/account_info.md","ref":"./resource/account_info.md","articles":[]}]},{"title":"激活扩展网关 SDK","level":"1.4.2","depth":2,"anchor":"#网关扩展-sdk","path":"resource/extension_sdk.md","ref":"./resource/extension_sdk.md#网关扩展-sdk","articles":[{"title":"获取网关sdk实例","level":"1.4.2.1","depth":3,"anchor":"#获取网关sdk实例","path":"resource/extension_sdk.md","ref":"./resource/extension_sdk.md#获取网关sdk实例","articles":[]},{"title":"注册回调函数","level":"1.4.2.2","depth":3,"anchor":"#注册回调函数","path":"resource/extension_sdk.md","ref":"./resource/extension_sdk.md#注册回调函数","articles":[]},{"title":"网关参数配置","level":"1.4.2.3","depth":3,"anchor":"#网关参数配置","path":"resource/extension_sdk.md","ref":"./resource/extension_sdk.md#网关参数配置","articles":[]},{"title":"启动网关","level":"1.4.2.4","depth":3,"anchor":"#启动网关","path":"resource/extension_sdk.md","ref":"./resource/extension_sdk.md#启动网关","articles":[]},{"title":"使用 token 激活网关","level":"1.4.2.5","depth":3,"anchor":"#使用-token-激活网关","path":"resource/extension_sdk.md","ref":"./resource/extension_sdk.md#使用-token-激活网关","articles":[]},{"title":"更多说明","level":"1.4.2.6","depth":3,"anchor":"#配置说明","path":"resource/extension_sdk.md","ref":"./resource/extension_sdk.md#配置说明","articles":[{"title":"配置说明","level":"1.4.2.6.1","depth":4,"anchor":"#配置说明","path":"resource/extension_sdk.md","ref":"./resource/extension_sdk.md#配置说明","articles":[]},{"title":"函数说明","level":"1.4.2.6.2","depth":4,"anchor":"#函数说明","path":"resource/extension_sdk.md","ref":"./resource/extension_sdk.md#函数说明","articles":[]},{"title":"辅助类说明","level":"1.4.2.6.3","depth":4,"anchor":"#辅助类说明","path":"resource/extension_sdk.md","ref":"./resource/extension_sdk.md#辅助类说明","articles":[]}]}]}]},"previous":{"title":"集成基础 SDK","level":"1.3.1","depth":2,"path":"resource/integrated_homesdk.md","ref":"./resource/integrated_homesdk.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","anchor-navigation-ex","flexible-alerts","expandable-chapters-small","favicon","pageview-count","hide-element","sf-score","mermaid-gb3"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"github":{"url":"https://github.com/TuyaInc/tuyasmart_android_device_central_sdk"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"zh-hans/resource/images/bitbug_favicon.ico"},"pageview-count":{},"sf-score":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":{"zh-hans":"注意","en":"Attention"}},"note":{"className":"info","icon":"fa fa-info-circle","label":{"zh-hans":"提示","en":"Note"}},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":{"zh-hans":"Tips","en":"Tip"}},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":{"zh-hans":"警告","en":"Warning"}}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/integrated_gateway_sdk.md","mtime":"2021-05-17T09:20:36.585Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-17T10:05:27.768Z"},"basePath":"..","book":{"language":"zh-hans"}});
         });
     </script>
 </div>

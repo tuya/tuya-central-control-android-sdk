@@ -47,7 +47,7 @@ LightDataPoint getLightDataPoint();
 | 数据类型        | 说明                                                         |
 | :-------------- | :----------------------------------------------------------- |
 | LightMode       | 枚举类型 包含<br /> MODE_WHITE("white") 白光模式<br /> MODE_COLOUR("colour") 彩光模式<br /> MODE_SCENE("scene") 情景模式 |
-| LightColourData | 包含HSV <br /> h ：色调，hue，取值范围0-360<br /> s ：饱和度，saturation，取值范围0-255<br /> v ：明度，value，取值范围0-255 |
+| LightColourData | 包含HSV <br /> h ：色调，hue，取值范围0-360<br /> s ：饱和度，saturation，取值范围0-100<br /> v ：明度，value，取值范围0-100 |
 | LightScene      | 枚举类型 情景模式 包含<br />  SCENE_GOODNIGHT  晚安情景<br />  SCENE_WORK 工作情景；<br />  SCENE_READ   阅读情景； <br />  SCENE_CASUAL 休闲情景； |
 
 
@@ -154,7 +154,7 @@ IControlLight colorHSV(int hue, int saturation, int value);
 
 | 返回值        | 说明                   | 参数                                            | 说明                                                         |
 | :------------ | :--------------------- | ----------------------------------------------- | ------------------------------------------------------------ |
-| IControlLight | 返回当前实例，链式调用 | int hue, <br /> int saturation,<br /> int value | hue          色调 （范围：0-360）<br />  saturation 饱和度（范围：0-255）<br />  value        明度（范围：0-255） |
+| IControlLight | 返回当前实例，链式调用 | int hue, <br /> int saturation,<br /> int value | hue          色调 （范围：0-360）<br />  saturation 饱和度（范围：0-100）<br />  value        明度（范围：0-100） |
 
 **示例代码**
 

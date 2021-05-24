@@ -23,7 +23,7 @@ Android 中控 SDK 是一套融合了网关、日志系统、语音功能以及 
 
 ## SDK 能力
 
-![image-20210427104824785](../../centralcontrolsdkdoc/SDK_DOC/zh-hans/resource/images/image-20210427104824785.png)
+![image-20210427104824785](./SDK_DOC/zh-hans/resource/images/image-20210427104824785.png)
 
 Android 设备 SDK 主要提供：
 

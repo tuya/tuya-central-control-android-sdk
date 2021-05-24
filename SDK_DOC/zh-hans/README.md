@@ -1,5 +1,3 @@
-# tuya-central-control-android-sdk 
-
 # 中控 SDK
 
 Android 中控 SDK 是一套融合了网关、日志系统、语音功能以及 ota 升级等功能的开发套件，开发者可以基于该 SDK 实现入网、语音控制、固件和 apk 升级等操作。
@@ -23,7 +21,7 @@ Android 中控 SDK 是一套融合了网关、日志系统、语音功能以及 
 
 ## SDK 能力
 
-![image-20210427104824785](../../centralcontrolsdkdoc/SDK_DOC/zh-hans/resource/images/image-20210427104824785.png)
+![image-20210427104824785](./resource/images/image-20210427104824785.png)
 
 Android 设备 SDK 主要提供：
 
@@ -35,6 +33,6 @@ Android 设备 SDK 主要提供：
 | 语音功能 |                                                             |
 | OTA 功能 |                                                             |
 
-其他能力：如用户管理、家庭管理、场景等。
+其他能力：如用户管理、家庭管理、场景等操作结合 Tuya Home SDK 完成。
 
 另外中控 SDK 方案提供了垂直化标准品类的控制，帮助开发者快速实现设备控制。

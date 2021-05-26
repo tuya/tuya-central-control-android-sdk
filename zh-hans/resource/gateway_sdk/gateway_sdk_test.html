@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>功能概述 · GitBook</title>
+        <title>量产与产测 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -94,10 +94,10 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="gateway_sdk.html" />
+    <link rel="next" href="../sdk_versions.html" />
     
     
-    <link rel="prev" href="gateway_sdk_desc.html" />
+    <link rel="prev" href="../ota.html" />
     
 
     
@@ -1159,7 +1159,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="gateway_sdk_test.html">
+        <li class="chapter active" data-level="1.10" data-path="gateway_sdk_test.html">
             
                 <a href="gateway_sdk_test.html">
             
@@ -1235,7 +1235,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >功能概述</a>
+        <a href="../.." >量产与产测</a>
     </h1>
 </div>
 
@@ -1250,31 +1250,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x529F;&#x80FD;&#x6982;&#x8FF0;"><b>1. </b>&#x529F;&#x80FD;&#x6982;&#x8FF0;</a></li><li><span class="title-icon "></span><a href="#&#x96C6;&#x6210;sdk"><b>2. </b>&#x96C6;&#x6210;SDK</a></li></ul></div><a href="#&#x529F;&#x80FD;&#x6982;&#x8FF0;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x529F;&#x80FD;&#x6982;&#x8FF0;"><a name="&#x529F;&#x80FD;&#x6982;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#&#x529F;&#x80FD;&#x6982;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x529F;&#x80FD;&#x6982;&#x8FF0;</h1>
-<p>Android &#x8BBE;&#x5907; SDK &#x662F;&#x4E00;&#x5957;&#x878D;&#x5408;&#x4E86;&#x7F51;&#x5173;&#x3001;&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;&#x3001;&#x8BED;&#x97F3;&#x529F;&#x80FD;&#x4EE5;&#x53CA; ota &#x5347;&#x7EA7;&#x7B49;&#x529F;&#x80FD;&#x7684;&#x5F00;&#x53D1;&#x5957;&#x4EF6;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E;&#x8BE5; sdk &#x5B9E;&#x73B0;&#x5165;&#x7F51;&#x3001;&#x8BED;&#x97F3;&#x63A7;&#x5236;&#x3001;&#x56FA;&#x4EF6;&#x548C; apk &#x5347;&#x7EA7;&#x7B49;&#x64CD;&#x4F5C;&#x3002;</p>
-<p><strong>&#x5E94;&#x7528;&#x573A;&#x666F;</strong></p>
-<p>&#x672C;&#x65B9;&#x6848;&#x9002;&#x7528;&#x4E8E; &#x5BF9; <strong>&#x4F20;&#x7EDF;&#x5E26;&#x5C4F;&#x7684; Android &#x8BBE;&#x5907;</strong> &#x7684;&#x667A;&#x80FD;&#x5316;&#x6539;&#x9020;&#x3002;&#x5728;&#x4F20;&#x7EDF;&#x7684;&#x5E26;&#x5C4F; Android &#x8BBE;&#x5907;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x901A;&#x8FC7;&#x5728;&#x539F;&#x6709; ROM &#x5185;&#x96C6;&#x6210; Tuya &#x7684;&#x5F00;&#x53D1;&#x5305;&#xFF0C;&#x5E76;&#x589E;&#x52A0; Tuya &#x7684;&#x786C;&#x4EF6;&#x901A;&#x4FE1;&#x6A21;&#x5757;&#xFF0C;&#x5B9E;&#x73B0;&#x5BF9;&#x7F51;&#x5173;&#x3001;&#x8BBE;&#x5907;&#x3001;&#x8BED;&#x97F3;&#x7B49;&#x7684;&#x63A7;&#x5236;&#x80FD;&#x529B;&#x3002;</p>
-<p><strong>&#x76EE;&#x6807;&#x9886;&#x57DF;</strong></p>
-<p>&#x5982; &#x5E26;&#x5C4F;&#x573A;&#x666F;&#x9762;&#x677F;&#x3001;&#x53EF;&#x89C6;&#x5BF9;&#x8BB2;&#x3001;&#x5E26;&#x5C4F;&#x97F3;&#x7BB1;&#x3001;&#x7535;&#x89C6;&#x7B49;&#xFF1B;</p>
-<p><strong>&#x9002;&#x7528;&#x8303;&#x56F4;</strong></p>
-<ol>
-<li>&#x4EA7;&#x54C1;&#x57FA;&#x4E8E; Android &#x7CFB;&#x7EDF;</li>
-<li>&#x5E26;&#x5C4F;&#x7684; Android &#x8BBE;&#x5907;</li>
-<li>&#x9700;&#x8981;&#x5728;&#x5C4F;&#x4E0A;&#x663E;&#x793A;&#x8BBE;&#x5907;&#x3001;&#x64CD;&#x4F5C;&#x8BBE;&#x5907;</li>
-<li>&#x6709;&#x4E00;&#x5B9A;&#x5E95;&#x5C42;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x80FD;&#x529B;&#x53CA;&#x4E0A;&#x5C42;&#x4EA4;&#x4E92;&#x5F00;&#x53D1;&#x80FD;&#x529B;</li>
-</ol>
-<h1 id="&#x96C6;&#x6210;sdk"><a name="&#x96C6;&#x6210;sdk" class="anchor-navigation-ex-anchor" href="#&#x96C6;&#x6210;sdk"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x96C6;&#x6210;SDK</h1>
-<ol>
-<li><p>&#x914D;&#x7F6E; build.gradle &#x6587;&#x4EF6; app &#x7684; build.gradle &#x6587;&#x4EF6;dependencies &#x91CC;&#x6DFB;&#x52A0;&#x4F9D;&#x8D56;&#x5E93;&#x3002;</p>
-<pre class="language-"><code class="lang-groovy"> implementation <span class="token string">&apos;com.tuya.smart:tuyasmart-libgateway: XXX&apos;</span>
- implementation <span class="token string">&apos;com.tuya.smart:tuyasmart-libtestsuit: XXX&apos;</span>
-</code></pre>
-</li>
-</ol>
-<blockquote>
-<p>[!NOTE]  </p>
-<p>&#x5404;&#x4E2A; SDK &#x7248;&#x672C;&#x53F7;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#xFF1A;<a href="sdk_versions.md"> SDK &#x7248;&#x672C;&#x53F7;</a> &#x7AE0;&#x8282;&#xFF0C;&#x83B7;&#x53D6;&#x5404;&#x7248;&#x672C;&#x5BF9;&#x5E94;&#x7684;&#x7248;&#x672C;&#x53F7;</p>
-</blockquote>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x91CF;&#x4EA7;&#x6307;&#x5BFC;&#x3001;&#x4EA7;&#x6D4B;&#x76F8;&#x5173;&#x7684;&#x6307;&#x5BFC;"><b>1. </b>&#x91CF;&#x4EA7;&#x6307;&#x5BFC;&#x3001;&#x4EA7;&#x6D4B;&#x76F8;&#x5173;&#x7684;&#x6307;&#x5BFC;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6388;&#x6743;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;"><b>1.1. </b>&#x6388;&#x6743;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;</a></li><li><span class="title-icon "></span><a href="#&#x8D2D;&#x4E70;&#x6388;&#x6743;&#x7801;"><b>1.2. </b>&#x8D2D;&#x4E70;&#x6388;&#x6743;&#x7801;</a></li></ul></ul></div><a href="#&#x91CF;&#x4EA7;&#x6307;&#x5BFC;&#x3001;&#x4EA7;&#x6D4B;&#x76F8;&#x5173;&#x7684;&#x6307;&#x5BFC;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x91CF;&#x4EA7;&#x6307;&#x5BFC;&#x3001;&#x4EA7;&#x6D4B;&#x76F8;&#x5173;&#x7684;&#x6307;&#x5BFC;"><a name="&#x91CF;&#x4EA7;&#x6307;&#x5BFC;&#x3001;&#x4EA7;&#x6D4B;&#x76F8;&#x5173;&#x7684;&#x6307;&#x5BFC;" class="anchor-navigation-ex-anchor" href="#&#x91CF;&#x4EA7;&#x6307;&#x5BFC;&#x3001;&#x4EA7;&#x6D4B;&#x76F8;&#x5173;&#x7684;&#x6307;&#x5BFC;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x91CF;&#x4EA7;&#x6307;&#x5BFC;&#x3001;&#x4EA7;&#x6D4B;&#x76F8;&#x5173;&#x7684;&#x6307;&#x5BFC;</h1>
+<h2 id="&#x6388;&#x6743;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;"><a name="&#x6388;&#x6743;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;" class="anchor-navigation-ex-anchor" href="#&#x6388;&#x6743;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x6388;&#x6743;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;</h2>
+<p>&#x4EA7;&#x54C1;&#x7684;&#x6388;&#x6743;&#x4FE1;&#x606F;&#xFF0C;&#x91C7;&#x7528; PID + UUID + AUTHKEY &#x7684;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#xFF0C;&#x9700;&#x8981;&#x4ECE;&#x7A0B;&#x5E8F;&#x7684; &#x5916;&#x90E8;&#x8F93;&#x5165;&#x3002;&#x91CF;&#x4EA7;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x70E7;&#x5165; flash &#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x5382;&#x5BB6;&#x9700;&#x8981;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x4E0A;&#x4F4D;&#x673A;&#xFF0C;&#x80FD;&#x591F;&#x9010;&#x6761;&#x8BFB;&#x53D6;&#x6388;&#x6743;&#x6E05;&#x5355;&#x4E2D;&#x7684; pid/uuid/authkey&#xFF0C; &#x5199;&#x5165;&#x5230;&#x82AF;&#x7247;&#x7684;&#x6307;&#x5B9A; flash &#x5904;&#xFF0C;&#x4F8B;&#x5982;:(&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x6388;&#x6743;&#x6E05;&#x5355;&#xFF0C;&#x5199;&#x5165;&#x82AF;&#x7247;)</p>
+<p><strong>&#x4EE3;&#x7801;&#x91CC; pid/uuid/authkey &#x4E0D;&#x80FD;&#x5199;&#x6B7B;</strong>&#xFF0C;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x5BF9;&#x5E94; flash &#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<h2 id="&#x8D2D;&#x4E70;&#x6388;&#x6743;&#x7801;"><a name="&#x8D2D;&#x4E70;&#x6388;&#x6743;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x8D2D;&#x4E70;&#x6388;&#x6743;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x8D2D;&#x4E70;&#x6388;&#x6743;&#x7801;</h2>
+<p>&#x5148;&#x671F;&#x8C03;&#x8BD5;&#x9636;&#x6BB5;&#xFF0C;&#x8BF7;&#x8054;&#x7CFB;&#x6D82;&#x9E26;&#x9879;&#x76EE;&#x7ECF;&#x7406;&#x83B7;&#x53D6;&#x3002;</p>
+<p>&#x5F53;&#x5F00;&#x53D1;&#x7684;&#x4EA7;&#x54C1;&#x5B8C;&#x6210;&#x529F;&#x80FD;&#x6D4B;&#x8BD5;&#x3001;&#x7A33;&#x5B9A;&#x6027;&#x6D4B;&#x8BD5;&#x3001;&#x8001;&#x5316;&#x6D4B;&#x8BD5;&#x3001;&#x62C9;&#x8DDD;&#x6D4B;&#x8BD5;&#x540E;&#xFF0C;&#x5BF9;&#x4EA7;&#x54C1;&#x8FDB;&#x884C;&#x53D1;&#x5E03;&#xFF0C;&#x7136;&#x540E;&#x53EF;&#x5728;&#x6D82;&#x9E26; IoT &#x5E73;&#x53F0;&#x91C7;&#x8D2D;&#x6388;&#x6743;&#x7801;&#x3002;&#x91C7;&#x8D2D;&#x6388;&#x6743;&#x7801;&#x524D;&#x9700;&#x8981;&#x5148;&#x521B;&#x5EFA;&#x4EA7;&#x54C1;&#x3002;</p>
+<p><img src="images/image-20210526202654306.png" alt="image-20210526202654306" style="zoom:50%;"></p>
+<p>&#x8BA2;&#x5355;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x5728;&#x90AE;&#x7BB1;&#x4E2D;&#x4F1A;&#x6536;&#x5230;&#x6388;&#x6743;&#x7801;&#x6E05;&#x5355;(&#x4E00;&#x4E2A;&#x8868;&#x683C;&#xFF0C;&#x5C06;&#x8868;&#x683C;&#x53E6;&#x5B58;&#x4E3A; xlsx &#x683C;&#x5F0F;&#xFF0C;&#x8868;&#x683C;&#x4E2D;&#x5185;&#x5BB9;&#x683C; &#x5F0F;&#x5982;&#x4E0B;:)</p>
+<p><img src="images/image-20210526202713293.png" alt="image-20210526202713293" style="zoom:50%;"></p>
 
                                 
                                 </section>
@@ -1302,12 +1288,12 @@
 
             
                 
-                <a href="gateway_sdk_desc.html" class="navigation navigation-prev " aria-label="Previous page: 方案一：网关 SDK">
+                <a href="../ota.html" class="navigation navigation-prev " aria-label="Previous page: 固件升级">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="gateway_sdk.html#集成sdk" class="navigation navigation-next " aria-label="Next page: 集成SDK">
+                <a href="../sdk_versions.html" class="navigation navigation-next " aria-label="Next page: SDK 版本号">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1318,7 +1304,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"功能概述","level":"1.5.3.1.1","depth":4,"next":{"title":"集成SDK","level":"1.5.3.1.2","depth":4,"anchor":"#集成sdk","path":"resource/gateway_sdk/gateway_sdk.md","ref":"./resource/gateway_sdk/gateway_sdk.md#集成sdk","articles":[]},"previous":{"title":"方案一：网关 SDK","level":"1.5.3.1","depth":3,"path":"resource/gateway_sdk/gateway_sdk_desc.md","ref":"./resource/gateway_sdk/gateway_sdk_desc.md","articles":[{"title":"功能概述","level":"1.5.3.1.1","depth":4,"anchor":"#功能概述","path":"resource/gateway_sdk/gateway_sdk.md","ref":"./resource/gateway_sdk/gateway_sdk.md#功能概述","articles":[]},{"title":"集成SDK","level":"1.5.3.1.2","depth":4,"anchor":"#集成sdk","path":"resource/gateway_sdk/gateway_sdk.md","ref":"./resource/gateway_sdk/gateway_sdk.md#集成sdk","articles":[]},{"title":"网关控制","level":"1.5.3.1.3","depth":4,"anchor":"#集成sdk","path":"resource/gateway_sdk/gateway_sdk_start.md","ref":"./resource/gateway_sdk/gateway_sdk_start.md#集成sdk","articles":[{"title":"网关启动","level":"1.5.3.1.3.1","depth":5,"anchor":"#网关启动","path":"resource/gateway_sdk/gateway_sdk_start.md","ref":"./resource/gateway_sdk/gateway_sdk_start.md#网关启动","articles":[]},{"title":"网关激活","level":"1.5.3.1.3.2","depth":5,"anchor":"#网关激活","path":"resource/gateway_sdk/gateway_sdk_start.md","ref":"./resource/gateway_sdk/gateway_sdk_start.md#网关激活","articles":[]},{"title":"获取设备虚拟 Id","level":"1.5.3.1.3.3","depth":5,"anchor":"#获取设备虚拟-id","path":"resource/gateway_sdk/gateway_sdk_start.md","ref":"./resource/gateway_sdk/gateway_sdk_start.md#获取设备虚拟-id","articles":[]},{"title":"DP 点上报","level":"1.5.3.1.3.4","depth":5,"anchor":"#dp-点上报","path":"resource/gateway_sdk/gateway_sdk_start.md","ref":"./resource/gateway_sdk/gateway_sdk_start.md#dp-点上报","articles":[]},{"title":"回调函数说明","level":"1.5.3.1.3.5","depth":5,"anchor":"#回调函数","path":"resource/gateway_sdk/gateway_sdk_start.md","ref":"./resource/gateway_sdk/gateway_sdk_start.md#回调函数","articles":[]},{"title":"日志系统","level":"1.5.3.1.3.6","depth":5,"anchor":"#日志系统","path":"resource/gateway_sdk/gateway_sdk_start.md","ref":"./resource/gateway_sdk/gateway_sdk_start.md#日志系统","articles":[]},{"title":"测试套件","level":"1.5.3.1.3.7","depth":5,"anchor":"#测试套件","path":"resource/gateway_sdk/gateway_sdk_start.md","ref":"./resource/gateway_sdk/gateway_sdk_start.md#测试套件","articles":[]},{"title":"语音相关","level":"1.5.3.1.3.8","depth":5,"anchor":"#语音相关","path":"resource/gateway_sdk/gateway_sdk_start.md","ref":"./resource/gateway_sdk/gateway_sdk_start.md#语音相关","articles":[]},{"title":"OTA 升级","level":"1.5.3.1.3.9","depth":5,"anchor":"#ota-升级","path":"resource/gateway_sdk/gateway_sdk_start.md","ref":"./resource/gateway_sdk/gateway_sdk_start.md#ota-升级","articles":[]}]}]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","anchor-navigation-ex","flexible-alerts","expandable-chapters-small","favicon","pageview-count","hide-element","sf-score","mermaid-gb3"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"github":{"url":"https://github.com/TuyaInc/tuyasmart_android_device_central_sdk"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"zh-hans/resource/images/bitbug_favicon.ico"},"pageview-count":{},"sf-score":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":{"zh-hans":"注意","en":"Attention"}},"note":{"className":"info","icon":"fa fa-info-circle","label":{"zh-hans":"提示","en":"Note"}},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":{"zh-hans":"Tips","en":"Tip"}},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":{"zh-hans":"警告","en":"Warning"}}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/gateway_sdk/gateway_sdk.md","mtime":"2021-05-26T12:35:50.232Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-26T12:38:01.677Z"},"basePath":"../..","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"量产与产测","level":"1.10","depth":1,"next":{"title":"SDK 版本号","level":"2.1","depth":1,"path":"resource/sdk_versions.md","ref":"./resource/sdk_versions.md","articles":[]},"previous":{"title":"固件升级","level":"1.9","depth":1,"path":"resource/ota.md","ref":"./resource/ota.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","anchor-navigation-ex","flexible-alerts","expandable-chapters-small","favicon","pageview-count","hide-element","sf-score","mermaid-gb3"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"github":{"url":"https://github.com/TuyaInc/tuyasmart_android_device_central_sdk"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"zh-hans/resource/images/bitbug_favicon.ico"},"pageview-count":{},"sf-score":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":{"zh-hans":"注意","en":"Attention"}},"note":{"className":"info","icon":"fa fa-info-circle","label":{"zh-hans":"提示","en":"Note"}},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":{"zh-hans":"Tips","en":"Tip"}},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":{"zh-hans":"警告","en":"Warning"}}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/gateway_sdk/gateway_sdk_test.md","mtime":"2021-05-26T12:27:20.734Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-26T12:38:01.677Z"},"basePath":"../..","book":{"language":"zh-hans"}});
         });
     </script>
 </div>

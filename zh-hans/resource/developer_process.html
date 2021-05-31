@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>固件升级 · GitBook</title>
+        <title>推荐开发流程 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -94,10 +94,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="gateway_sdk/gateway_sdk_test.html" />
+    <link rel="next" href="register_iot_sdk.html" />
     
     
-    <link rel="prev" href="scene.html" />
+    <link rel="prev" href="professional_words.html" />
     
 
     
@@ -160,7 +160,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.2" data-path="developer_process.html">
+        <li class="chapter active" data-level="1.1.2" data-path="developer_process.html">
             
                 <a href="developer_process.html">
             
@@ -1159,7 +1159,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9" data-path="ota.html">
+        <li class="chapter " data-level="1.9" data-path="ota.html">
             
                 <a href="ota.html">
             
@@ -1248,7 +1248,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >固件升级</a>
+        <a href=".." >推荐开发流程</a>
     </h1>
 </div>
 
@@ -1263,106 +1263,51 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x56FA;&#x4EF6;&#x5347;&#x7EA7;"><b>1. </b>&#x56FA;&#x4EF6;&#x5347;&#x7EA7;</a></li><ul><li><span class="title-icon "></span><a href="#&#x521D;&#x59CB;&#x5316;&#x56FA;&#x4EF6;&#x4FE1;&#x606F;"><b>1.1. </b>&#x521D;&#x59CB;&#x5316;&#x56FA;&#x4EF6;&#x4FE1;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x4FE1;&#x606F;"><b>1.2. </b>&#x83B7;&#x53D6;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x4FE1;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x5F00;&#x59CB;&#x5347;&#x7EA7;"><b>1.3. </b>&#x5F00;&#x59CB;&#x5347;&#x7EA7;</a></li><li><span class="title-icon "></span><a href="#&#x9500;&#x6BC1;"><b>1.4. </b>&#x9500;&#x6BC1;</a></li></ul></ul></div><a href="#&#x56FA;&#x4EF6;&#x5347;&#x7EA7;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x56FA;&#x4EF6;&#x5347;&#x7EA7;"><a name="&#x56FA;&#x4EF6;&#x5347;&#x7EA7;" class="anchor-navigation-ex-anchor" href="#&#x56FA;&#x4EF6;&#x5347;&#x7EA7;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x56FA;&#x4EF6;&#x5347;&#x7EA7;</h1>
-<p>&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x589E;&#x5F3A;&#x8BBE;&#x5907;&#x80FD;&#x529B;&#x4EE5;&#x53CA;&#x4FEE;&#x590D; bug&#xFF1B;</p>
-<h2 id="&#x521D;&#x59CB;&#x5316;&#x56FA;&#x4EF6;&#x4FE1;&#x606F;"><a name="&#x521D;&#x59CB;&#x5316;&#x56FA;&#x4EF6;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x521D;&#x59CB;&#x5316;&#x56FA;&#x4EF6;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x521D;&#x59CB;&#x5316;&#x56FA;&#x4EF6;&#x4FE1;&#x606F;</h2>
-<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
-<pre class="language-"><code class="lang-java"><span class="token class-name">ITuyaOta</span> <span class="token function">newOTAInstance</span><span class="token punctuation">(</span><span class="token class-name">String</span> devId<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">&#x53C2;&#x6570;</th>
-<th style="text-align:left">&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">devId</td>
-<td style="text-align:left">&#x8BBE;&#x5907; id / &#x7F51;&#x5173; id</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&#x5B9E;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
-<pre class="language-"><code class="lang-java"><span class="token class-name">ITuyaOta</span> iTuyaOta <span class="token operator">=</span> <span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">newOTAInstance</span><span class="token punctuation">(</span><span class="token string">&quot;devId&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-<h2 id="&#x83B7;&#x53D6;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x4FE1;&#x606F;"><a name="&#x83B7;&#x53D6;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x83B7;&#x53D6;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x4FE1;&#x606F;</h2>
-<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
-<pre class="language-"><code class="lang-java">iTuyaOta<span class="token punctuation">.</span><span class="token function">getOtaInfo</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">IGetOtaInfoCallback</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-    <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">UpgradeInfoBean</span><span class="token punctuation">&gt;</span></span> list<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-
-    <span class="token punctuation">}</span>
-    <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">void</span> <span class="token function">onFailure</span><span class="token punctuation">(</span><span class="token class-name">String</span> code<span class="token punctuation">,</span> <span class="token class-name">String</span> error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">&#x5B57;&#x6BB5;</th>
-<th style="text-align:left">&#x7C7B;&#x578B;</th>
-<th style="text-align:left">&#x63CF;&#x8FF0;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">upgradeStatus</td>
-<td style="text-align:left">int</td>
-<td style="text-align:left">&#x5347;&#x7EA7;&#x72B6;&#x6001;&#xFF0C;0 :&#x65E0;&#x65B0;&#x7248;&#x672C; 1 :&#x6709;&#x65B0;&#x7248;&#x672C; 2 :&#x5728;&#x5347;&#x7EA7;&#x4E2D;</td>
-</tr>
-<tr>
-<td style="text-align:left">version</td>
-<td style="text-align:left">String</td>
-<td style="text-align:left">&#x6700;&#x65B0;&#x7248;&#x672C;</td>
-</tr>
-<tr>
-<td style="text-align:left">currentVersion</td>
-<td style="text-align:left">String</td>
-<td style="text-align:left">&#x5F53;&#x524D;&#x7248;&#x672C;</td>
-</tr>
-<tr>
-<td style="text-align:left">timeout</td>
-<td style="text-align:left">int</td>
-<td style="text-align:left">&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#xFF1A;&#x79D2;</td>
-</tr>
-<tr>
-<td style="text-align:left">upgradeType</td>
-<td style="text-align:left">int</td>
-<td style="text-align:left">0 :app &#x63D0;&#x9192;&#x5347;&#x7EA7; 2: app &#x5F3A;&#x5236;&#x5347;&#x7EA7; 3: &#x68C0;&#x6D4B;&#x5347;&#x7EA7;</td>
-</tr>
-<tr>
-<td style="text-align:left">type</td>
-<td style="text-align:left">int</td>
-<td style="text-align:left">0: Wi-Fi &#x8BBE;&#x5907; 1:&#x84DD;&#x7259;&#x8BBE;&#x5907; 2:GPRS &#x8BBE;&#x5907; 3:zigbee &#x8BBE;&#x5907; 9: MCU</td>
-</tr>
-<tr>
-<td style="text-align:left">typeDesc</td>
-<td style="text-align:left">String</td>
-<td style="text-align:left">&#x6A21;&#x5757;&#x63CF;&#x8FF0;</td>
-</tr>
-<tr>
-<td style="text-align:left">lastUpgradeTime</td>
-<td style="text-align:left">long</td>
-<td style="text-align:left">&#x4E0A;&#x6B21;&#x5347;&#x7EA7;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#xFF1A;&#x6BEB;&#x79D2;</td>
-</tr>
-</tbody>
-</table>
-<h2 id="&#x5F00;&#x59CB;&#x5347;&#x7EA7;"><a name="&#x5F00;&#x59CB;&#x5347;&#x7EA7;" class="anchor-navigation-ex-anchor" href="#&#x5F00;&#x59CB;&#x5347;&#x7EA7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x5F00;&#x59CB;&#x5347;&#x7EA7;</h2>
-<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
-<p>&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x5F00;&#x59CB;&#x5347;&#x7EA7;,&#x8C03;&#x7528;&#x540E;&#x6CE8;&#x518C;&#x7684; OTA &#x76D1;&#x542C;&#x4F1A;&#x628A;&#x5347;&#x7EA7;&#x72B6;&#x6001;&#x8FD4;&#x56DE;&#x56DE;&#x6765;&#xFF0C;&#x4EE5;&#x4FBF;&#x5F00;&#x53D1;&#x8005;&#x6784;&#x5EFA; UI&#xFF1B;</p>
-<pre class="language-"><code class="lang-java">iTuyaOta<span class="token punctuation">.</span><span class="token function">startOta</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-<h2 id="&#x9500;&#x6BC1;"><a name="&#x9500;&#x6BC1;" class="anchor-navigation-ex-anchor" href="#&#x9500;&#x6BC1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x9500;&#x6BC1;</h2>
-<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
-<p>&#x79BB;&#x5F00;&#x5347;&#x7EA7;&#x9875;&#x9762;&#x540E;&#x8981;&#x9500;&#x6BC1;&#xFF0C;&#x56DE;&#x6536;&#x5185;&#x5B58;&#xFF1B;</p>
-<pre class="language-"><code class="lang-java">iTuyaOta<span class="token punctuation">.</span><span class="token function">onDestory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-
+                                <div class="mermaid">
+graph TB
+    id1(&#x9879;&#x76EE;&#x7ACB;&#x9879;&#x5F00;&#x53D1;)
+    id2(&#x51C6;&#x5907;&#x5DE5;&#x4F5C;)
+    id3(&#x6CE8;&#x518C;&#x5F00;&#x53D1;&#x8005;&#x8D26;&#x53F7;)
+    id4(&#x83B7;&#x53D6;&#x6388;&#x6743;&#x7801;&#x4FE1;&#x606F;)
+    id5(&#x5E94;&#x7528;&#x5F00;&#x542F;&#x767D;&#x540D;&#x5355;)
+    id1 --&gt;|&#x51C6;&#x5907;&#x5DE5;&#x4F5C;|id2
+    subgraph  
+           id2--&gt; id3
+           id2--&gt; id4
+           id2--&gt; id5
+           id3--&gt; &#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#x5B8C;&#x6210;
+           id4--&gt; &#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#x5B8C;&#x6210;
+           id5--&gt; &#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#x5B8C;&#x6210;
+    end  
+    &#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#x5B8C;&#x6210; --&gt;|&#x9009;&#x62E9;&#x786C;&#x4EF6;&#x63A5;&#x5165;&#x7684;&#x65B9;&#x6848;|&#x65B9;&#x6848;&#x9009;&#x62E9;
+    subgraph  
+      &#x65B9;&#x6848;&#x9009;&#x62E9; --&gt; &#x5E26;&#x7F51;&#x5173;
+      &#x65B9;&#x6848;&#x9009;&#x62E9; --&gt; &#x4E0D;&#x5E26;&#x7F51;&#x5173;
+      &#x5E26;&#x7F51;&#x5173;--&gt; &#x7F51;&#x5173;SDK
+      &#x5E26;&#x7F51;&#x5173;--&gt; &#x6269;&#x5C55;&#x7F51;&#x5173;SDK
+      &#x4E0D;&#x5E26;&#x7F51;&#x5173; --&gt; &#x4E09;&#x9009;&#x4E00;&#x9009;&#x62E9;&#x5B8C;&#x6210;
+      &#x6269;&#x5C55;&#x7F51;&#x5173;SDK --&gt; &#x4E09;&#x9009;&#x4E00;&#x9009;&#x62E9;&#x5B8C;&#x6210;
+      &#x7F51;&#x5173;SDK --&gt; &#x4E09;&#x9009;&#x4E00;&#x9009;&#x62E9;&#x5B8C;&#x6210;
+    end  
+    &#x4E09;&#x9009;&#x4E00;&#x9009;&#x62E9;&#x5B8C;&#x6210;--&gt;|&#x8FDB;&#x5165;&#x5F00;&#x53D1;|&#x5F00;&#x53D1;&#x9636;&#x6BB5;
+    subgraph  
+        &#x5F00;&#x53D1;&#x9636;&#x6BB5; --&gt; &#x626B;&#x7801;&#x6388;&#x6743;&#x767B;&#x5F55;
+        &#x626B;&#x7801;&#x6388;&#x6743;&#x767B;&#x5F55; --&gt; &#x6FC0;&#x6D3B;&#x8BBE;&#x5907;
+        &#x6FC0;&#x6D3B;&#x8BBE;&#x5907; --&gt; &#x5BB6;&#x5EAD;&#x7BA1;&#x7406;[&quot;&#x5BB6;&#x5EAD;&#x7BA1;&#x7406;&#xFF1A;&#x83B7;&#x53D6;&#x5BB6;&#x5EAD;&#xFF0C;&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x7B49;&quot;]
+        &#x5BB6;&#x5EAD;&#x7BA1;&#x7406;  --&gt;  &#x8BBE;&#x5907;&#x63A7;&#x5236;
+        &#x8BBE;&#x5907;&#x63A7;&#x5236; --&gt; &#x5782;&#x76F4;&#x5316;&#x54C1;&#x7C7B;&#x63A7;&#x5236;
+        &#x8BBE;&#x5907;&#x63A7;&#x5236; --&gt; &#x573A;&#x666F;&#x63A7;&#x5236;
+        &#x5782;&#x76F4;&#x5316;&#x54C1;&#x7C7B;&#x63A7;&#x5236; --&gt; &#x54C1;&#x7C7B;[&quot;&#x706F;&#x5177;&#x3001;&#x5F00;&#x5173;&#x3001;&#x7A7A;&#x8C03;&#x3001;&#x65B0;&#x98CE;&#x673A;&#x3001;&#x6E29;&#x63A7;&#x5668;&#x3001;&#x4F20;&#x611F;&#x7B49;&quot;]
+        &#x573A;&#x666F;&#x63A7;&#x5236; --&gt; &#x529F;&#x80FD;&#x5F00;&#x53D1;&#x5B8C;&#x6210;
+        &#x54C1;&#x7C7B;--&gt; &#x529F;&#x80FD;&#x5F00;&#x53D1;&#x5B8C;&#x6210;
+    end 
+    &#x529F;&#x80FD;&#x5F00;&#x53D1;&#x5B8C;&#x6210; --&gt;|&quot;&#x6D4B;&#x8BD5;&#x3001;&#x91CF;&#x4EA7;&#x3001;&#x4EA7;&#x6D4B;&#x3001;&#x4EA7;&#x54C1;&#x53D1;&#x5E03;&quot;| &#x6D4B;&#x8BD5;&#x6D41;&#x7A0B;[&quot;&#x6D4B;&#x8BD5;&#x3001;&#x91CF;&#x4EA7;&#x3001;&#x4EA7;&#x6D4B;&#x3001;&#x4EA7;&#x54C1;&#x53D1;&#x5E03;&quot;]
+    subgraph  
+            &#x6D4B;&#x8BD5;&#x6D41;&#x7A0B; --&gt; &#x6D4B;&#x8BD5;
+            &#x6D4B;&#x8BD5; --&gt; &#x4EA7;&#x6D4B;[&quot;&#x751F;&#x4EA7;&#x3001;&#x4EA7;&#x6D4B;&quot;]
+            &#x4EA7;&#x6D4B; --&gt; &#x53D1;&#x5E03;
+    end 
+</div>
                                 
                                 </section>
                             
@@ -1389,12 +1334,12 @@
 
             
                 
-                <a href="scene.html" class="navigation navigation-prev " aria-label="Previous page: 智能场景">
+                <a href="professional_words.html" class="navigation navigation-prev " aria-label="Previous page: 名词解释">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="gateway_sdk/gateway_sdk_test.html" class="navigation navigation-next " aria-label="Next page: 量产与产测">
+                <a href="register_iot_sdk.html" class="navigation navigation-next " aria-label="Next page: 准备工作">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1405,7 +1350,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"固件升级","level":"1.9","depth":1,"next":{"title":"量产与产测","level":"1.10","depth":1,"path":"resource/gateway_sdk/gateway_sdk_test.md","ref":"./resource/gateway_sdk/gateway_sdk_test.md","articles":[]},"previous":{"title":"智能场景","level":"1.8","depth":1,"path":"resource/scene.md","ref":"./resource/scene.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","anchor-navigation-ex","flexible-alerts","expandable-chapters-small","favicon","pageview-count","hide-element","sf-score","mermaid-gb3"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"github":{"url":"https://github.com/TuyaInc/tuyasmart_android_device_central_sdk"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"zh-hans/resource/images/bitbug_favicon.ico"},"pageview-count":{},"sf-score":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":{"zh-hans":"注意","en":"Attention"}},"note":{"className":"info","icon":"fa fa-info-circle","label":{"zh-hans":"提示","en":"Note"}},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":{"zh-hans":"Tips","en":"Tip"}},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":{"zh-hans":"警告","en":"Warning"}}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/ota.md","mtime":"2021-05-10T07:26:19.195Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-31T11:43:09.480Z"},"basePath":"..","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"推荐开发流程","level":"1.1.2","depth":2,"next":{"title":"准备工作","level":"1.2","depth":1,"path":"resource/register_iot_sdk.md","ref":"./resource/register_iot_sdk.md","articles":[{"title":"注册开发者账号","level":"1.2.1","depth":2,"path":"resource/register_iot_sdk.md","ref":"./resource/register_iot_sdk.md","articles":[]},{"title":"获取授权码等信息","level":"1.2.2","depth":2,"path":"resource/get_auth_info.md","ref":"./resource/get_auth_info.md","articles":[]},{"title":"应用开启白名单","level":"1.2.3","depth":2,"path":"resource/app_white_list.md","ref":"./resource/app_white_list.md","articles":[]}]},"previous":{"title":"名词解释","level":"1.1.1","depth":2,"path":"resource/professional_words.md","ref":"./resource/professional_words.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","anchor-navigation-ex","flexible-alerts","expandable-chapters-small","favicon","pageview-count","hide-element","sf-score","mermaid-gb3"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"github":{"url":"https://github.com/TuyaInc/tuyasmart_android_device_central_sdk"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"zh-hans/resource/images/bitbug_favicon.ico"},"pageview-count":{},"sf-score":{},"expandable-chapters-small":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":{"zh-hans":"注意","en":"Attention"}},"note":{"className":"info","icon":"fa fa-info-circle","label":{"zh-hans":"提示","en":"Note"}},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":{"zh-hans":"Tips","en":"Tip"}},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":{"zh-hans":"警告","en":"Warning"}}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/developer_process.md","mtime":"2021-05-31T11:42:51.610Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-31T11:43:09.480Z"},"basePath":"..","book":{"language":"zh-hans"}});
         });
     </script>
 </div>

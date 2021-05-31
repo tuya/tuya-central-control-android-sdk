@@ -18,10 +18,6 @@
 
 		![准备工作](https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/goat/20201106/e8290d0e481c433d96c2614f24a5bfc7.png)
 
-4. 您可以根据实际需求选择需要的选择方案，支持多选，然后根据 Podfile 和 Gradle 进行 SDK 的集成。
+5. 点击 **获取密钥**，获取 SDK 的 AppKey，AppSecret，安全图片等信息。
 
-	![准备工作](https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/goat/20201223/c53d35e3c9a34d53a54a7530deed16ef.png)
-
-5. 点击 **获取密码**，获取 SDK 的 AppKey，AppSecret，安全图片等信息。
-
-	![准备工作](https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/goat/20201223/ad70f633d69546e49ec4fbcf5660fea5.png)
+	<img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/goat/20201223/ad70f633d69546e49ec4fbcf5660fea5.png" alt="准备工作" style="zoom:50%;" />

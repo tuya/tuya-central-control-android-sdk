@@ -314,7 +314,7 @@ Config 类说明如下：
          */
         public String mCachePath;
         /**
-         * 是否使用zigbee，必须一开始就设置
+         * 是否使用 Zigbee，必须一开始就设置
          */
         public boolean mEnableZigbee;
         /**

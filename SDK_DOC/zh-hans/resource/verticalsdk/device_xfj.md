@@ -24,7 +24,7 @@ boolean getSwitch();
 | :------ | :----------- |
 | boolean | 返回开关状态 |
 
-### 获取室内问题
+### 获取室内温度
 
 ```java
 @Nullable Integer getTempIndoor();
@@ -46,7 +46,7 @@ boolean getSwitch();
 
 | 返回值  | 说明                             |
 | :------ | :------------------------------- |
-| Integer | 返回当前 室内的温度 null则不支持 |
+| Integer | 返回当前 室内的湿度 null则不支持 |
 
 ### 获取当前的工作模式
 

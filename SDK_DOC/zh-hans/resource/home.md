@@ -249,3 +249,75 @@ TuyaHomeSdk.newHomeInstance(homeId).getHomeLocalCache(new ITuyaHomeResultCallbac
 | sharedDeviceList | List<DeviceBean>   | 收到的共享设备                       |
 | sharedGroupList  | List<GroupBean>    | 收到的共享群组                       |
 | homeStatus       | int                | 家庭状态（1:等待接受 2:接受 3:拒绝） |
+
+# 获取中控上可以显示的设备列表
+
+获取IDataManger实例
+
+```java
+ITuyaCentralControlSdk manager = TuyaOptimusSdk.getManager(ITuyaCentralControlSdk.class);
+IDataManger dataManager = manager.getDataManager();
+```
+
+## 查询中控屏可控设备列表
+
+**接口说明**
+
+```java
+void getAllDevice(String screenId, Business.ResultListener<ArrayList<String>> listener);
+```
+
+**参数说明**
+
+| 参数     | 说明                                     |
+| :------- | :--------------------------------------- |
+| screenId | 设备 id / 网关 id                        |
+| listener | 回调接口，ArrayList<String> 设备 id 列表 |
+
+## 查询中控屏显示设备列表
+
+**接口说明**
+
+```java
+void getAllShowDevice(String screenId, Business.ResultListener<ArrayList<String>> listener);
+```
+
+**参数说明**
+
+| 参数     | 说明                                     |
+| :------- | :--------------------------------------- |
+| screenId | 设备 id / 网关 id                        |
+| listener | 回调接口，ArrayList<String> 设备 id 列表 |
+
+
+## 查询中控屏隐藏设备列表
+
+**接口说明**
+
+```java
+void getAllHideDevice(String screenId, Business.ResultListener<ArrayList<String>> listener);
+```
+
+**参数说明**
+
+| 参数     | 说明                                     |
+| :------- | :--------------------------------------- |
+| devId    | 设备 id / 网关 id                        |
+| listener | 回调接口，ArrayList<String> 设备 id 列表 |
+
+代码示例：
+```java
+// 查询中控屏隐藏设备列表
+dataManager.getAllHideDevice("deviceID", new Business.ResultListener<ArrayList<String>>() {
+    @Override
+    public void onFailure(BusinessResponse businessResponse, ArrayList<String> strings, String s) {
+                
+    }
+
+    @Override
+    public void onSuccess(BusinessResponse businessResponse, ArrayList<String> strings, String s) {
+
+    }
+});
+```
+

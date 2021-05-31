@@ -89,3 +89,47 @@ TuyaHomeSdk.newSceneInstance(sceneId).executeScene(new IResultCallback() {
 });
 ```
 
+## 查询中控屏隐藏场景列表
+
+### 获取 IDataManger 实例
+
+```java
+ITuyaCentralControlSdk manager = TuyaOptimusSdk.getManager(ITuyaCentralControlSdk.class);
+IDataManger dataManager = manager.getDataManager();
+```
+
+### 查询中控屏隐藏场景列表
+
+**接口说明**
+
+```java
+void getAllHideScene(String screenId, Business.ResultListener<ArrayList<String>> listener);
+```
+
+**参数说明**
+
+| 参数     | 说明                                     |
+| :------- | :--------------------------------------- |
+| screenId | 设备 id / 网关 id                        |
+| listener | 回调接口，ArrayList<String> 场景 id 列表 |
+
+**示例代码**
+
+```java
+ITuyaCentralControlSdk manager = TuyaOptimusSdk.getManager(ITuyaCentralControlSdk.class);
+IDataManger dataManager = manager.getDataManager();
+
+// 查询中控屏显示设备列表
+dataManager.getAllShowDevice("sceneId", new Business.ResultListener<ArrayList<String>>() {
+    @Override
+    public void onFailure(BusinessResponse businessResponse, ArrayList<String> strings, String s) {
+                
+    }
+
+    @Override
+    public void onSuccess(BusinessResponse businessResponse, ArrayList<String> strings, String s) {
+
+    }
+});
+```
+

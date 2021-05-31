@@ -20,9 +20,16 @@ android {
 dependencies {
     implementation 'com.alibaba:fastjson:1.1.67.android'
     implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.14.9'
-    implementation 'com.tuya.smart:tuyasmart:3.25.1'
+    implementation 'com.tuya.smart:tuyasmart:XXX'
+    implementation 'com.tuya.smart:optimus:XXX'
+    implementation 'com.tuya.smart:tuyasmart-centralcontrolsdk:XXX'
+    implementation 'com.tuya.smart:tuyasmart-verticalcategory:XXX'
 }
 ```
+
+> [!NOTE]  
+>
+> 各个 SDK 版本号可以参考：[ SDK 版本号](sdk_versions.md) 章节，获取各版本对应的版本号
 
 在根目录的 build.gradle 文件中增加涂鸦云仓库地址，进行仓库配置
 

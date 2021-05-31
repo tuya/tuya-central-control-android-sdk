@@ -22,6 +22,11 @@ Android 设备 SDK 是一套融合了网关、日志系统、语音功能以及 
 1. 配置 build.gradle 文件 app 的 build.gradle 文件dependencies 里添加依赖库。
 
 	```groovy
-	implementation 'com.tuya.smart:tuyasmart-libgateway:1.0.8-hrs'
-	implementation 'com.tuya.smart:tuyasmart-libtestsuit:1.0.1'
+	implementation 'com.tuya.smart:tuyasmart-libgateway: XXX'
+	implementation 'com.tuya.smart:tuyasmart-libtestsuit: XXX'
 	```
+
+> [!NOTE]  
+>
+> 各个 SDK 版本号可以参考：[ SDK 版本号](sdk_versions.md) 章节，获取各版本对应的版本号
+

@@ -38,12 +38,20 @@ ITuyaXXDevice mDevice = deviceManager.getITuyaXXDevice(mDevId)
 | SOS传感器        | sos     | ITuyaSensorSOSDevice   |
 | 温湿度传感       | wsdcg   | ITuyaSensorWSDCGDevice |
 
-
+> [!warning]
+>
+> 如果获取的品类是：
+>
+> * qt 则不支持垂直化品类控制
+> * 其他未支持的品类
 
 
 <h1>获取指令集，状态集</h1> <span id='title_code'></span>
 
-
+> [!warning]
+>
+> 如果 状态集、指令集 都未空，那么该设备无法支持标准指令控制，需要通过自定义设备方式进行控制。
+>
 
 ### 获取当前设备支持的指令集
 
